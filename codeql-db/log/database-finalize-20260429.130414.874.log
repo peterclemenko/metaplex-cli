@@ -1,0 +1,624 @@
+[2026-04-29 13:04:14] This is codeql database finalize codeql-db
+[2026-04-29 13:04:14] Log file was started late.
+[2026-04-29 13:04:15] [PROGRESS] database finalize> Running TRAP import for CodeQL database at /home/aoi/dev/metaplex-cli/codeql-db...
+[2026-04-29 13:04:15] Running plumbing command: codeql dataset import --dbscheme=/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/semmlecode.javascript.dbscheme -- /home/aoi/dev/metaplex-cli/codeql-db/db-javascript /home/aoi/dev/metaplex-cli/codeql-db/trap/javascript
+[2026-04-29 13:04:19] Clearing disk cache since the version file /home/aoi/dev/metaplex-cli/codeql-db/db-javascript/default/cache/version does not exist
+[2026-04-29 13:04:19] Tuple pool not found. Clearing relations with cached strings
+[2026-04-29 13:04:19] Trimming disk cache at /home/aoi/dev/metaplex-cli/codeql-db/db-javascript/default/cache in mode clear.
+[2026-04-29 13:04:19] Sequence stamp origin is -5919657820058963557
+[2026-04-29 13:04:19] Pausing evaluation to hard-clear memory at sequence stamp o+0
+[2026-04-29 13:04:19] Unpausing evaluation
+[2026-04-29 13:04:19] Pausing evaluation to quickly trim disk at sequence stamp o+1
+[2026-04-29 13:04:19] Unpausing evaluation
+[2026-04-29 13:04:19] Pausing evaluation to zealously trim disk at sequence stamp o+2
+[2026-04-29 13:04:19] Unpausing evaluation
+[2026-04-29 13:04:19] Trimming completed (13ms): Purged everything.
+[2026-04-29 13:04:19] Scanning for files in /home/aoi/dev/metaplex-cli/codeql-db/trap/javascript
+[2026-04-29 13:04:20] Found 398 TRAP files (21.21 MiB)
+[2026-04-29 13:04:20] [PROGRESS] dataset import> Importing TRAP files
+[2026-04-29 13:04:20] Importing .eslintrc.json.trap.gz (1 of 398)
+[2026-04-29 13:04:21] Importing dependabot.yml.trap.gz (2 of 398)
+[2026-04-29 13:04:21] Importing onPushToMain.yml.trap.gz (3 of 398)
+[2026-04-29 13:04:21] Importing onRelease.yml.trap.gz (4 of 398)
+[2026-04-29 13:04:21] Importing test.yml.trap.gz (5 of 398)
+[2026-04-29 13:04:21] Importing .oclifrc.cjs.trap.gz (6 of 398)
+[2026-04-29 13:04:21] Importing .validator.cjs.trap.gz (7 of 398)
+[2026-04-29 13:04:21] Importing dev.js.trap.gz (8 of 398)
+[2026-04-29 13:04:21] Importing run.js.trap.gz (9 of 398)
+[2026-04-29 13:04:21] Importing eslint.config.js.trap.gz (10 of 398)
+[2026-04-29 13:04:21] Importing oclif.manifest.json.js.trap.gz (11 of 398)
+[2026-04-29 13:04:21] Importing package.json.trap.gz (12 of 398)
+[2026-04-29 13:04:21] Importing pnpm-lock.yaml.trap.gz (13 of 398)
+[2026-04-29 13:04:21] Importing createTestCandyMachineDirectory.js.trap.gz (14 of 398)
+[2026-04-29 13:04:21] Importing BaseCommand.ts.trap.gz (15 of 398)
+[2026-04-29 13:04:22] Importing TransactionCommand.ts.trap.gz (16 of 398)
+[2026-04-29 13:04:22] Importing delegate.ts.trap.gz (17 of 398)
+[2026-04-29 13:04:22] Importing index.ts.trap.gz (18 of 398)
+[2026-04-29 13:04:22] Importing register.ts.trap.gz (19 of 398)
+[2026-04-29 13:04:22] Importing revoke.ts.trap.gz (20 of 398)
+[2026-04-29 13:04:22] Importing fetch.ts.trap.gz (21 of 398)
+[2026-04-29 13:04:22] Importing index.ts.trap.gz (22 of 398)
+[2026-04-29 13:04:22] Importing register.ts.trap.gz (23 of 398)
+[2026-04-29 13:04:22] Importing set-agent-token.ts.trap.gz (24 of 398)
+[2026-04-29 13:04:22] Importing create.ts.trap.gz (25 of 398)
+[2026-04-29 13:04:22] Importing index.ts.trap.gz (26 of 398)
+[2026-04-29 13:04:22] Importing index.ts.trap.gz (27 of 398)
+[2026-04-29 13:04:22] Importing burn.ts.trap.gz (28 of 398)
+[2026-04-29 13:04:22] Importing create.ts.trap.gz (29 of 398)
+[2026-04-29 13:04:22] Importing fetch.ts.trap.gz (30 of 398)
+[2026-04-29 13:04:22] Importing index.ts.trap.gz (31 of 398)
+[2026-04-29 13:04:22] Importing transfer.ts.trap.gz (32 of 398)
+[2026-04-29 13:04:22] Importing update.ts.trap.gz (33 of 398)
+[2026-04-29 13:04:22] Importing create.ts.trap.gz (34 of 398)
+[2026-04-29 13:04:22] Importing index.ts.trap.gz (35 of 398)
+[2026-04-29 13:04:22] Importing list.ts.trap.gz (36 of 398)
+[2026-04-29 13:04:22] Importing create.ts.trap.gz (37 of 398)
+[2026-04-29 13:04:22] Importing fetch.ts.trap.gz (38 of 398)
+[2026-04-29 13:04:22] Importing delete.ts.trap.gz (39 of 398)
+[2026-04-29 13:04:22] Importing index.ts.trap.gz (40 of 398)
+[2026-04-29 13:04:22] Importing remove.ts.trap.gz (41 of 398)
+[2026-04-29 13:04:22] Importing update.ts.trap.gz (42 of 398)
+[2026-04-29 13:04:22] Importing index.ts.trap.gz (43 of 398)
+[2026-04-29 13:04:22] Importing insert.ts.trap.gz (44 of 398)
+[2026-04-29 13:04:22] Importing upload.ts.trap.gz (45 of 398)
+[2026-04-29 13:04:22] Importing validate.ts.trap.gz (46 of 398)
+[2026-04-29 13:04:22] Importing withdraw.ts.trap.gz (47 of 398)
+[2026-04-29 13:04:22] Importing index.ts.trap.gz (48 of 398)
+[2026-04-29 13:04:22] Importing set.ts.trap.gz (49 of 398)
+[2026-04-29 13:04:22] Importing get.ts.trap.gz (50 of 398)
+[2026-04-29 13:04:22] Importing index.ts.trap.gz (51 of 398)
+[2026-04-29 13:04:22] Importing add.ts.trap.gz (52 of 398)
+[2026-04-29 13:04:22] Importing index.ts.trap.gz (53 of 398)
+[2026-04-29 13:04:22] Importing list.ts.trap.gz (54 of 398)
+[2026-04-29 13:04:22] Importing remove.ts.trap.gz (55 of 398)
+[2026-04-29 13:04:22] Importing set.ts.trap.gz (56 of 398)
+[2026-04-29 13:04:22] Importing set.ts.trap.gz (57 of 398)
+[2026-04-29 13:04:22] Importing index.ts.trap.gz (58 of 398)
+[2026-04-29 13:04:22] Importing set.ts.trap.gz (59 of 398)
+[2026-04-29 13:04:22] Importing add.ts.trap.gz (60 of 398)
+[2026-04-29 13:04:22] Importing index.ts.trap.gz (61 of 398)
+[2026-04-29 13:04:22] Importing list.ts.trap.gz (62 of 398)
+[2026-04-29 13:04:22] Importing new.ts.trap.gz (63 of 398)
+[2026-04-29 13:04:22] Importing remove.ts.trap.gz (64 of 398)
+[2026-04-29 13:04:22] Importing set.ts.trap.gz (65 of 398)
+[2026-04-29 13:04:22] Importing burn.ts.trap.gz (66 of 398)
+[2026-04-29 13:04:22] Importing create.ts.trap.gz (67 of 398)
+[2026-04-29 13:04:23] Importing index.ts.trap.gz (68 of 398)
+[2026-04-29 13:04:23] Importing info.ts.trap.gz (69 of 398)
+[2026-04-29 13:04:23] Importing fetch.ts.trap.gz (70 of 398)
+[2026-04-29 13:04:23] Importing index.ts.trap.gz (71 of 398)
+[2026-04-29 13:04:23] Importing template.ts.trap.gz (72 of 398)
+[2026-04-29 13:04:23] Importing transfer.ts.trap.gz (73 of 398)
+[2026-04-29 13:04:23] Importing update.ts.trap.gz (74 of 398)
+[2026-04-29 13:04:23] Importing add.ts.trap.gz (75 of 398)
+[2026-04-29 13:04:23] Importing create.ts.trap.gz (76 of 398)
+[2026-04-29 13:04:23] Importing fetch.ts.trap.gz (77 of 398)
+[2026-04-29 13:04:23] Importing index.ts.trap.gz (78 of 398)
+[2026-04-29 13:04:23] Importing template.ts.trap.gz (79 of 398)
+[2026-04-29 13:04:23] Importing index.ts.trap.gz (80 of 398)
+[2026-04-29 13:04:23] Importing add.ts.trap.gz (81 of 398)
+[2026-04-29 13:04:23] Importing generate.ts.trap.gz (82 of 398)
+[2026-04-29 13:04:23] Importing index.ts.trap.gz (83 of 398)
+[2026-04-29 13:04:23] Importing update.ts.trap.gz (84 of 398)
+[2026-04-29 13:04:23] Importing create.ts.trap.gz (85 of 398)
+[2026-04-29 13:04:23] Importing deposit.ts.trap.gz (86 of 398)
+[2026-04-29 13:04:23] Importing fetch.ts.trap.gz (87 of 398)
+[2026-04-29 13:04:23] Importing index.ts.trap.gz (88 of 398)
+[2026-04-29 13:04:23] Importing withdraw.ts.trap.gz (89 of 398)
+[2026-04-29 13:04:23] Importing add-launch-pool.ts.trap.gz (90 of 398)
+[2026-04-29 13:04:23] Importing add-presale.ts.trap.gz (91 of 398)
+[2026-04-29 13:04:23] Importing add-unlocked.ts.trap.gz (92 of 398)
+[2026-04-29 13:04:23] Importing fetch.ts.trap.gz (93 of 398)
+[2026-04-29 13:04:23] Importing index.ts.trap.gz (94 of 398)
+[2026-04-29 13:04:23] Importing claim-unlocked.ts.trap.gz (95 of 398)
+[2026-04-29 13:04:23] Importing claim.ts.trap.gz (96 of 398)
+[2026-04-29 13:04:23] Importing create.ts.trap.gz (97 of 398)
+[2026-04-29 13:04:23] Importing deposit.ts.trap.gz (98 of 398)
+[2026-04-29 13:04:23] Importing fetch.ts.trap.gz (99 of 398)
+[2026-04-29 13:04:23] Importing finalize.ts.trap.gz (100 of 398)
+[2026-04-29 13:04:23] Importing index.ts.trap.gz (101 of 398)
+[2026-04-29 13:04:23] Importing create.ts.trap.gz (102 of 398)
+[2026-04-29 13:04:23] Importing index.ts.trap.gz (103 of 398)
+[2026-04-29 13:04:23] Importing register.ts.trap.gz (104 of 398)
+[2026-04-29 13:04:23] Importing claim.ts.trap.gz (105 of 398)
+[2026-04-29 13:04:23] Importing deposit.ts.trap.gz (106 of 398)
+[2026-04-29 13:04:23] Importing index.ts.trap.gz (107 of 398)
+[2026-04-29 13:04:23] Importing revoke.ts.trap.gz (108 of 398)
+[2026-04-29 13:04:23] Importing swap.ts.trap.gz (109 of 398)
+[2026-04-29 13:04:23] Importing transition.ts.trap.gz (110 of 398)
+[2026-04-29 13:04:23] Importing withdraw.ts.trap.gz (111 of 398)
+[2026-04-29 13:04:23] Importing create.ts.trap.gz (112 of 398)
+[2026-04-29 13:04:23] Importing index.ts.trap.gz (113 of 398)
+[2026-04-29 13:04:23] Importing transfer.ts.trap.gz (114 of 398)
+[2026-04-29 13:04:23] Importing update.ts.trap.gz (115 of 398)
+[2026-04-29 13:04:23] Importing index.ts.trap.gz (116 of 398)
+[2026-04-29 13:04:23] Importing close.ts.trap.gz (117 of 398)
+[2026-04-29 13:04:23] Importing create.ts.trap.gz (118 of 398)
+[2026-04-29 13:04:23] Importing deactivate.ts.trap.gz (119 of 398)
+[2026-04-29 13:04:23] Importing fetch.ts.trap.gz (120 of 398)
+[2026-04-29 13:04:23] Importing index.ts.trap.gz (121 of 398)
+[2026-04-29 13:04:23] Importing rent.ts.trap.gz (122 of 398)
+[2026-04-29 13:04:23] Importing airdrop.ts.trap.gz (123 of 398)
+[2026-04-29 13:04:23] Importing balance.ts.trap.gz (124 of 398)
+[2026-04-29 13:04:23] Importing index.ts.trap.gz (125 of 398)
+[2026-04-29 13:04:23] Importing transfer.ts.trap.gz (126 of 398)
+[2026-04-29 13:04:24] Importing unwrap.ts.trap.gz (127 of 398)
+[2026-04-29 13:04:24] Importing wrap.ts.trap.gz (128 of 398)
+[2026-04-29 13:04:24] Importing balance.ts.trap.gz (129 of 398)
+[2026-04-29 13:04:24] Importing fund.ts.trap.gz (130 of 398)
+[2026-04-29 13:04:24] Importing index.ts.trap.gz (131 of 398)
+[2026-04-29 13:04:24] Importing upload.ts.trap.gz (132 of 398)
+[2026-04-29 13:04:24] Importing withdraw.ts.trap.gz (133 of 398)
+[2026-04-29 13:04:24] Importing index.ts.trap.gz (134 of 398)
+[2026-04-29 13:04:24] Importing program.ts.trap.gz (135 of 398)
+[2026-04-29 13:04:24] Importing website.ts.trap.gz (136 of 398)
+[2026-04-29 13:04:24] Importing add-metadata.ts.trap.gz (137 of 398)
+[2026-04-29 13:04:24] Importing create.ts.trap.gz (138 of 398)
+[2026-04-29 13:04:24] Importing index.ts.trap.gz (139 of 398)
+[2026-04-29 13:04:24] Importing mint.ts.trap.gz (140 of 398)
+[2026-04-29 13:04:24] Importing transfer.ts.trap.gz (141 of 398)
+[2026-04-29 13:04:24] Importing update.ts.trap.gz (142 of 398)
+[2026-04-29 13:04:24] Importing transaction.ts.trap.gz (143 of 398)
+[2026-04-29 13:04:24] Importing constants.ts.trap.gz (144 of 398)
+[2026-04-29 13:04:24] Importing explorers.ts.trap.gz (145 of 398)
+[2026-04-29 13:04:24] Importing index.ts.trap.gz (146 of 398)
+[2026-04-29 13:04:24] Importing Context.ts.trap.gz (147 of 398)
+[2026-04-29 13:04:24] Importing FileSigner.ts.trap.gz (148 of 398)
+[2026-04-29 13:04:24] Importing LedgerSigner.ts.trap.gz (149 of 398)
+[2026-04-29 13:04:24] Importing StandardColors.ts.trap.gz (150 of 398)
+[2026-04-29 13:04:24] Importing candyGuardsSchema.ts.trap.gz (151 of 398)
+[2026-04-29 13:04:24] Importing cm-utils.ts.trap.gz (152 of 398)
+[2026-04-29 13:04:24] Importing createCmTemplateFolder.ts.trap.gz (153 of 398)
+[2026-04-29 13:04:24] Importing insertItems.ts.trap.gz (154 of 398)
+[2026-04-29 13:04:24] Importing jsonGuardParser.ts.trap.gz (155 of 398)
+[2026-04-29 13:04:24] Importing createCandyMachineWizardPrompt.ts.trap.gz (156 of 398)
+[2026-04-29 13:04:24] Importing types.ts.trap.gz (157 of 398)
+[2026-04-29 13:04:24] Importing uploadItems.ts.trap.gz (158 of 398)
+[2026-04-29 13:04:24] Importing validateAssetsFolder.ts.trap.gz (159 of 398)
+[2026-04-29 13:04:24] Importing validateCacheUploads.ts.trap.gz (160 of 398)
+[2026-04-29 13:04:24] Importing batchBurn.ts.trap.gz (161 of 398)
+[2026-04-29 13:04:24] Importing burnAssetTx.ts.trap.gz (162 of 398)
+[2026-04-29 13:04:24] Importing cache.ts.trap.gz (163 of 398)
+[2026-04-29 13:04:24] Importing createAssetFromArgs.ts.trap.gz (164 of 398)
+[2026-04-29 13:04:24] Importing createAssetFromFiles.ts.trap.gz (165 of 398)
+[2026-04-29 13:04:24] Importing createAssetsFromDirectory.ts.trap.gz (166 of 398)
+[2026-04-29 13:04:24] Importing createTx.ts.trap.gz (167 of 398)
+[2026-04-29 13:04:24] Importing prepareJsonMetadata.ts.trap.gz (168 of 398)
+[2026-04-29 13:04:24] Importing batchFetch.ts.trap.gz (169 of 398)
+[2026-04-29 13:04:24] Importing fetch.ts.trap.gz (170 of 398)
+[2026-04-29 13:04:24] Importing offchainAssetTemplate.ts.trap.gz (171 of 398)
+[2026-04-29 13:04:24] Importing offchainCollectionTemplate.ts.trap.gz (172 of 398)
+[2026-04-29 13:04:24] Importing batchUpdate.ts.trap.gz (173 of 398)
+[2026-04-29 13:04:24] Importing update.ts.trap.gz (174 of 398)
+[2026-04-29 13:04:24] Importing create-distro-wizard.ts.trap.gz (175 of 398)
+[2026-04-29 13:04:24] Importing deserializeInstruction.ts.trap.gz (176 of 398)
+[2026-04-29 13:04:24] Importing file.ts.trap.gz (177 of 398)
+[2026-04-29 13:04:24] Importing createGenesisWizardPrompt.ts.trap.gz (178 of 398)
+[2026-04-29 13:04:24] Importing launchApi.ts.trap.gz (179 of 398)
+[2026-04-29 13:04:24] Importing operations.ts.trap.gz (180 of 398)
+[2026-04-29 13:04:24] Importing wizard.ts.trap.gz (181 of 398)
+[2026-04-29 13:04:24] Importing genesis.ts.trap.gz (182 of 398)
+[2026-04-29 13:04:24] Importing fetchJsonMetadata.ts.trap.gz (183 of 398)
+[2026-04-29 13:04:24] Importing getMetadata.ts.trap.gz (184 of 398)
+[2026-04-29 13:04:24] Importing readJsonMetadataFromFile.ts.trap.gz (185 of 398)
+[2026-04-29 13:04:24] Importing airdrop.ts.trap.gz (186 of 398)
+[2026-04-29 13:04:24] Importing treeStorage.ts.trap.gz (187 of 398)
+[2026-04-29 13:04:24] Importing baseCache.ts.trap.gz (188 of 398)
+[2026-04-29 13:04:24] Importing burnCache.ts.trap.gz (189 of 398)
+[2026-04-29 13:04:24] Importing candyMachineCache.ts.trap.gz (190 of 398)
+[2026-04-29 13:04:24] Importing createCache.ts.trap.gz (191 of 398)
+[2026-04-29 13:04:24] Importing pluginData.ts.trap.gz (192 of 398)
+[2026-04-29 13:04:24] Importing uploadProgressHandler.ts.trap.gz (193 of 398)
+[2026-04-29 13:04:24] Importing assetSignerPlugin.ts.trap.gz (194 of 398)
+[2026-04-29 13:04:24] Importing confirmAllTransactions.ts.trap.gz (195 of 398)
+[2026-04-29 13:04:24] Importing confirmTransaction.ts.trap.gz (196 of 398)
+[2026-04-29 13:04:24] Importing logFailedTransactions.ts.trap.gz (197 of 398)
+[2026-04-29 13:04:24] Importing sendAllTransactions.ts.trap.gz (198 of 398)
+[2026-04-29 13:04:24] Importing sendAllTransactionsAndConfirm.ts.trap.gz (199 of 398)
+[2026-04-29 13:04:24] Importing sendAndConfirm.ts.trap.gz (200 of 398)
+[2026-04-29 13:04:24] Importing sendOptions.ts.trap.gz (201 of 398)
+[2026-04-29 13:04:24] Importing sendTransaction.ts.trap.gz (202 of 398)
+[2026-04-29 13:04:24] Importing wrapForAssetSigner.ts.trap.gz (203 of 398)
+[2026-04-29 13:04:24] Importing fetchAdvancedStorageProvider.ts.trap.gz (204 of 398)
+[2026-04-29 13:04:24] Importing imageUploader.ts.trap.gz (205 of 398)
+[2026-04-29 13:04:24] Importing initStorageProvider.ts.trap.gz (206 of 398)
+[2026-04-29 13:04:24] Importing resolveImageUri.ts.trap.gz (207 of 398)
+[2026-04-29 13:04:24] Importing uploadDirectory.ts.trap.gz (208 of 398)
+[2026-04-29 13:04:24] Importing uploadFile.ts.trap.gz (209 of 398)
+[2026-04-29 13:04:24] Importing uploadFiles.ts.trap.gz (210 of 398)
+[2026-04-29 13:04:24] Importing uploadJson.ts.trap.gz (211 of 398)
+[2026-04-29 13:04:24] Importing cascade.ts.trap.gz (212 of 398)
+[2026-04-29 13:04:24] Importing index.ts.trap.gz (213 of 398)
+[2026-04-29 13:04:24] Importing irys.ts.trap.gz (214 of 398)
+[2026-04-29 13:04:24] Importing turbo.ts.trap.gz (215 of 398)
+[2026-04-29 13:04:24] Importing util.ts.trap.gz (216 of 398)
+[2026-04-29 13:04:24] Importing validations.ts.trap.gz (217 of 398)
+[2026-04-29 13:04:24] Importing agentDocumentPrompt.ts.trap.gz (218 of 398)
+[2026-04-29 13:04:24] Importing booleanPrompt.ts.trap.gz (219 of 398)
+[2026-04-29 13:04:24] Importing createAssetPrompt.ts.trap.gz (220 of 398)
+[2026-04-29 13:04:24] Importing createBubblegumMetadataPrompt.ts.trap.gz (221 of 398)
+[2026-04-29 13:04:24] Importing createTokenMetadataPrompt.ts.trap.gz (222 of 398)
+[2026-04-29 13:04:24] Importing createTokenPrompt.ts.trap.gz (223 of 398)
+[2026-04-29 13:04:24] Importing explorerSelectorPrompt.ts.trap.gz (224 of 398)
+[2026-04-29 13:04:24] Importing pluginInquirer.ts.trap.gz (225 of 398)
+[2026-04-29 13:04:25] Importing pluginSelector.ts.trap.gz (226 of 398)
+[2026-04-29 13:04:25] Importing promptSelector.ts.trap.gz (227 of 398)
+[2026-04-29 13:04:25] Importing rpcSelectorPrompt.ts.trap.gz (228 of 398)
+[2026-04-29 13:04:25] Importing selectTreePrompt.ts.trap.gz (229 of 398)
+[2026-04-29 13:04:25] Importing walletSelectPrompt.ts.trap.gz (230 of 398)
+[2026-04-29 13:04:25] Importing agenthelpers.ts.trap.gz (231 of 398)
+[2026-04-29 13:04:25] Importing agents.executive.test.ts.trap.gz (232 of 398)
+[2026-04-29 13:04:25] Importing agents.fetch.test.ts.trap.gz (233 of 398)
+[2026-04-29 13:04:25] Importing agents.register.test.ts.trap.gz (234 of 398)
+[2026-04-29 13:04:25] Importing agents.revoke.test.ts.trap.gz (235 of 398)
+[2026-04-29 13:04:25] Importing agents.set-agent-token.test.ts.trap.gz (236 of 398)
+[2026-04-29 13:04:25] Importing bg.collection.create.test.ts.trap.gz (237 of 398)
+[2026-04-29 13:04:25] Importing bg.integration.test.ts.trap.gz (238 of 398)
+[2026-04-29 13:04:25] Importing bg.nft.burn.test.ts.trap.gz (239 of 398)
+[2026-04-29 13:04:25] Importing bg.nft.create.test.ts.trap.gz (240 of 398)
+[2026-04-29 13:04:25] Importing bg.nft.transfer.test.ts.trap.gz (241 of 398)
+[2026-04-29 13:04:25] Importing bg.nft.update.test.ts.trap.gz (242 of 398)
+[2026-04-29 13:04:25] Importing bg.tree.create.test.ts.trap.gz (243 of 398)
+[2026-04-29 13:04:25] Importing bgcollectionhelpers.ts.trap.gz (244 of 398)
+[2026-04-29 13:04:25] Importing bghelpers.ts.trap.gz (245 of 398)
+[2026-04-29 13:04:25] Importing common.ts.trap.gz (246 of 398)
+[2026-04-29 13:04:25] Importing cm.create.test.ts.trap.gz (247 of 398)
+[2026-04-29 13:04:25] Importing cm.full.test.ts.trap.gz (248 of 398)
+[2026-04-29 13:04:25] Importing cm.guard.test.ts.trap.gz (249 of 398)
+[2026-04-29 13:04:25] Importing cm.insert.test.ts.trap.gz (250 of 398)
+[2026-04-29 13:04:25] Importing cm.withdraw.test.ts.trap.gz (251 of 398)
+[2026-04-29 13:04:25] Importing guard-parsing.test.ts.trap.gz (252 of 398)
+[2026-04-29 13:04:25] Importing core.asset-signer.test.ts.trap.gz (253 of 398)
+[2026-04-29 13:04:25] Importing core.asset.update.collection.test.ts.trap.gz (254 of 398)
+[2026-04-29 13:04:25] Importing core.burn.test.ts.trap.gz (255 of 398)
+[2026-04-29 13:04:25] Importing core.collection.create.test.ts.trap.gz (256 of 398)
+[2026-04-29 13:04:25] Importing core.create.test.ts.trap.gz (257 of 398)
+[2026-04-29 13:04:25] Importing core.execute.test.ts.trap.gz (258 of 398)
+[2026-04-29 13:04:25] Importing core.plugins.test.ts.trap.gz (259 of 398)
+[2026-04-29 13:04:25] Importing core.prepareJsonMetadata.test.ts.trap.gz (260 of 398)
+[2026-04-29 13:04:25] Importing core.transfer.test.ts.trap.gz (261 of 398)
+[2026-04-29 13:04:25] Importing corehelpers.ts.trap.gz (262 of 398)
+[2026-04-29 13:04:25] Importing distro.create.test.ts.trap.gz (263 of 398)
+[2026-04-29 13:04:25] Importing distro.deposit.test.ts.trap.gz (264 of 398)
+[2026-04-29 13:04:25] Importing distro.withdraw.test.ts.trap.gz (265 of 398)
+[2026-04-29 13:04:25] Importing genesis.create.test.ts.trap.gz (266 of 398)
+[2026-04-29 13:04:25] Importing genesis.integration.test.ts.trap.gz (267 of 398)
+[2026-04-29 13:04:25] Importing genesis.launch.test.ts.trap.gz (268 of 398)
+[2026-04-29 13:04:25] Importing genesis.presale.test.ts.trap.gz (269 of 398)
+[2026-04-29 13:04:25] Importing genesis.swap.test.ts.trap.gz (270 of 398)
+[2026-04-29 13:04:25] Importing genesis.withdraw.test.ts.trap.gz (271 of 398)
+[2026-04-29 13:04:25] Importing genesishelpers.ts.trap.gz (272 of 398)
+[2026-04-29 13:04:25] Importing tm.transfer.test.ts.trap.gz (273 of 398)
+[2026-04-29 13:04:25] Importing tm.update.test.ts.trap.gz (274 of 398)
+[2026-04-29 13:04:25] Importing tmhelpers.ts.trap.gz (275 of 398)
+[2026-04-29 13:04:25] Importing sol.balance.test.ts.trap.gz (276 of 398)
+[2026-04-29 13:04:25] Importing sol.unwrap.test.ts.trap.gz (277 of 398)
+[2026-04-29 13:04:25] Importing sol.wrap.test.ts.trap.gz (278 of 398)
+[2026-04-29 13:04:25] Importing token.create.test.ts.trap.gz (279 of 398)
+[2026-04-29 13:04:25] Importing token.mint.test.ts.trap.gz (280 of 398)
+[2026-04-29 13:04:25] Importing toolbox.transaction.test.ts.trap.gz (281 of 398)
+[2026-04-29 13:04:25] Importing deserializeInstruction.test.ts.trap.gz (282 of 398)
+[2026-04-29 13:04:25] Importing runCli.ts.trap.gz (283 of 398)
+[2026-04-29 13:04:25] Importing tsconfig.json.trap.gz (284 of 398)
+[2026-04-29 13:04:25] Importing utils.ts.trap.gz (285 of 398)
+[2026-04-29 13:04:25] Importing tsconfig.build.json.trap.gz (286 of 398)
+[2026-04-29 13:04:25] Importing tsconfig.json.trap.gz (287 of 398)
+[2026-04-29 13:04:25] Importing metadata.trap.gz (288 of 398)
+[2026-04-29 13:04:25] Importing es2016.js.trap.gz (289 of 398)
+[2026-04-29 13:04:25] Importing es2017.js.trap.gz (290 of 398)
+[2026-04-29 13:04:25] Importing es3.js.trap.gz (291 of 398)
+[2026-04-29 13:04:25] Importing es5.js.trap.gz (292 of 398)
+[2026-04-29 13:04:25] Importing es6.js.trap.gz (293 of 398)
+[2026-04-29 13:04:25] Importing es6_collections.js.trap.gz (294 of 398)
+[2026-04-29 13:04:25] Importing intl.js.trap.gz (295 of 398)
+[2026-04-29 13:04:25] Importing proxy.js.trap.gz (296 of 398)
+[2026-04-29 13:04:25] Importing bdd.js.trap.gz (297 of 398)
+[2026-04-29 13:04:25] Importing jquery-3.2.js.trap.gz (298 of 398)
+[2026-04-29 13:04:25] Importing should.js.trap.gz (299 of 398)
+[2026-04-29 13:04:26] Importing vows.js.trap.gz (300 of 398)
+[2026-04-29 13:04:26] Importing assert.js.trap.gz (301 of 398)
+[2026-04-29 13:04:26] Importing assert_legacy.js.trap.gz (302 of 398)
+[2026-04-29 13:04:26] Importing buffer.js.trap.gz (303 of 398)
+[2026-04-29 13:04:26] Importing child_process.js.trap.gz (304 of 398)
+[2026-04-29 13:04:26] Importing cluster.js.trap.gz (305 of 398)
+[2026-04-29 13:04:26] Importing console.js.trap.gz (306 of 398)
+[2026-04-29 13:04:26] Importing constants.js.trap.gz (307 of 398)
+[2026-04-29 13:04:26] Importing crypto.js.trap.gz (308 of 398)
+[2026-04-29 13:04:26] Importing dgram.js.trap.gz (309 of 398)
+[2026-04-29 13:04:26] Importing dns.js.trap.gz (310 of 398)
+[2026-04-29 13:04:26] Importing domain.js.trap.gz (311 of 398)
+[2026-04-29 13:04:26] Importing events.js.trap.gz (312 of 398)
+[2026-04-29 13:04:26] Importing fs.js.trap.gz (313 of 398)
+[2026-04-29 13:04:26] Importing globals.js.trap.gz (314 of 398)
+[2026-04-29 13:04:26] Importing http.js.trap.gz (315 of 398)
+[2026-04-29 13:04:26] Importing https.js.trap.gz (316 of 398)
+[2026-04-29 13:04:26] Importing module.js.trap.gz (317 of 398)
+[2026-04-29 13:04:26] Importing net.js.trap.gz (318 of 398)
+[2026-04-29 13:04:26] Importing os.js.trap.gz (319 of 398)
+[2026-04-29 13:04:26] Importing path.js.trap.gz (320 of 398)
+[2026-04-29 13:04:26] Importing process.js.trap.gz (321 of 398)
+[2026-04-29 13:04:26] Importing punycode.js.trap.gz (322 of 398)
+[2026-04-29 13:04:26] Importing querystring.js.trap.gz (323 of 398)
+[2026-04-29 13:04:26] Importing readline.js.trap.gz (324 of 398)
+[2026-04-29 13:04:26] Importing repl.js.trap.gz (325 of 398)
+[2026-04-29 13:04:26] Importing stream.js.trap.gz (326 of 398)
+[2026-04-29 13:04:26] Importing string_decoder.js.trap.gz (327 of 398)
+[2026-04-29 13:04:26] Importing sys.js.trap.gz (328 of 398)
+[2026-04-29 13:04:26] Importing timers.js.trap.gz (329 of 398)
+[2026-04-29 13:04:26] Importing tls.js.trap.gz (330 of 398)
+[2026-04-29 13:04:26] Importing tty.js.trap.gz (331 of 398)
+[2026-04-29 13:04:26] Importing url.js.trap.gz (332 of 398)
+[2026-04-29 13:04:26] Importing util.js.trap.gz (333 of 398)
+[2026-04-29 13:04:26] Importing v8.js.trap.gz (334 of 398)
+[2026-04-29 13:04:26] Importing vm.js.trap.gz (335 of 398)
+[2026-04-29 13:04:26] Importing zlib.js.trap.gz (336 of 398)
+[2026-04-29 13:04:26] Importing jsshell.js.trap.gz (337 of 398)
+[2026-04-29 13:04:26] Importing rhino.js.trap.gz (338 of 398)
+[2026-04-29 13:04:26] Importing spidermonkey.js.trap.gz (339 of 398)
+[2026-04-29 13:04:26] Importing v8.js.trap.gz (340 of 398)
+[2026-04-29 13:04:26] Importing chrome.js.trap.gz (341 of 398)
+[2026-04-29 13:04:26] Importing fetchapi.js.trap.gz (342 of 398)
+[2026-04-29 13:04:26] Importing fileapi.js.trap.gz (343 of 398)
+[2026-04-29 13:04:26] Importing flash.js.trap.gz (344 of 398)
+[2026-04-29 13:04:26] Importing gecko_css.js.trap.gz (345 of 398)
+[2026-04-29 13:04:26] Importing gecko_dom.js.trap.gz (346 of 398)
+[2026-04-29 13:04:26] Importing gecko_event.js.trap.gz (347 of 398)
+[2026-04-29 13:04:26] Importing gecko_ext.js.trap.gz (348 of 398)
+[2026-04-29 13:04:26] Importing gecko_xml.js.trap.gz (349 of 398)
+[2026-04-29 13:04:26] Importing html5.js.trap.gz (350 of 398)
+[2026-04-29 13:04:27] Importing ie_css.js.trap.gz (351 of 398)
+[2026-04-29 13:04:27] Importing ie_dom.js.trap.gz (352 of 398)
+[2026-04-29 13:04:27] Importing ie_event.js.trap.gz (353 of 398)
+[2026-04-29 13:04:27] Importing ie_vml.js.trap.gz (354 of 398)
+[2026-04-29 13:04:27] Importing intl.js.trap.gz (355 of 398)
+[2026-04-29 13:04:27] Importing iphone.js.trap.gz (356 of 398)
+[2026-04-29 13:04:27] Importing mediasource.js.trap.gz (357 of 398)
+[2026-04-29 13:04:27] Importing page_visibility.js.trap.gz (358 of 398)
+[2026-04-29 13:04:27] Importing streamsapi.js.trap.gz (359 of 398)
+[2026-04-29 13:04:27] Importing url.js.trap.gz (360 of 398)
+[2026-04-29 13:04:27] Importing w3c_anim_timing.js.trap.gz (361 of 398)
+[2026-04-29 13:04:27] Importing w3c_batterystatus.js.trap.gz (362 of 398)
+[2026-04-29 13:04:27] Importing w3c_css.js.trap.gz (363 of 398)
+[2026-04-29 13:04:27] Importing w3c_css3d.js.trap.gz (364 of 398)
+[2026-04-29 13:04:27] Importing w3c_device_sensor_event.js.trap.gz (365 of 398)
+[2026-04-29 13:04:27] Importing w3c_dom1.js.trap.gz (366 of 398)
+[2026-04-29 13:04:27] Importing w3c_dom2.js.trap.gz (367 of 398)
+[2026-04-29 13:04:27] Importing w3c_dom3.js.trap.gz (368 of 398)
+[2026-04-29 13:04:27] Importing w3c_dom4.js.trap.gz (369 of 398)
+[2026-04-29 13:04:27] Importing w3c_elementtraversal.js.trap.gz (370 of 398)
+[2026-04-29 13:04:27] Importing w3c_encoding.js.trap.gz (371 of 398)
+[2026-04-29 13:04:27] Importing w3c_event.js.trap.gz (372 of 398)
+[2026-04-29 13:04:27] Importing w3c_event3.js.trap.gz (373 of 398)
+[2026-04-29 13:04:27] Importing w3c_gamepad.js.trap.gz (374 of 398)
+[2026-04-29 13:04:27] Importing w3c_geolocation.js.trap.gz (375 of 398)
+[2026-04-29 13:04:27] Importing w3c_indexeddb.js.trap.gz (376 of 398)
+[2026-04-29 13:04:27] Importing w3c_midi.js.trap.gz (377 of 398)
+[2026-04-29 13:04:27] Importing w3c_navigation_timing.js.trap.gz (378 of 398)
+[2026-04-29 13:04:27] Importing w3c_permissions.js.trap.gz (379 of 398)
+[2026-04-29 13:04:27] Importing w3c_pointer_events.js.trap.gz (380 of 398)
+[2026-04-29 13:04:27] Importing w3c_range.js.trap.gz (381 of 398)
+[2026-04-29 13:04:27] Importing w3c_requestidlecallback.js.trap.gz (382 of 398)
+[2026-04-29 13:04:27] Importing w3c_rtc.js.trap.gz (383 of 398)
+[2026-04-29 13:04:27] Importing w3c_screen_orientation.js.trap.gz (384 of 398)
+[2026-04-29 13:04:27] Importing w3c_selectors.js.trap.gz (385 of 398)
+[2026-04-29 13:04:27] Importing w3c_serviceworker.js.trap.gz (386 of 398)
+[2026-04-29 13:04:27] Importing w3c_touch_event.js.trap.gz (387 of 398)
+[2026-04-29 13:04:27] Importing w3c_webcrypto.js.trap.gz (388 of 398)
+[2026-04-29 13:04:27] Importing w3c_xml.js.trap.gz (389 of 398)
+[2026-04-29 13:04:27] Importing webgl.js.trap.gz (390 of 398)
+[2026-04-29 13:04:27] Importing webkit_css.js.trap.gz (391 of 398)
+[2026-04-29 13:04:27] Importing webkit_dom.js.trap.gz (392 of 398)
+[2026-04-29 13:04:27] Importing webkit_event.js.trap.gz (393 of 398)
+[2026-04-29 13:04:27] Importing webkit_notifications.js.trap.gz (394 of 398)
+[2026-04-29 13:04:27] Importing webkit_usercontent.js.trap.gz (395 of 398)
+[2026-04-29 13:04:27] Importing webstorage.js.trap.gz (396 of 398)
+[2026-04-29 13:04:27] Importing whatwg_encoding.js.trap.gz (397 of 398)
+[2026-04-29 13:04:27] Importing window.js.trap.gz (398 of 398)
+[2026-04-29 13:04:27] [PROGRESS] dataset import> Merging relations
+[2026-04-29 13:04:28] Merging 1 fragment for 'files'.
+[2026-04-29 13:04:28] Merged 1397 bytes (1.36 KiB) for 'files'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'folders'.
+[2026-04-29 13:04:28] Merged 317 bytes for 'folders'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'containerparent'.
+[2026-04-29 13:04:28] Merged 1293 bytes (1.26 KiB) for 'containerparent'.
+[2026-04-29 13:04:28] Merging 5 fragments for 'locations_default'.
+[2026-04-29 13:04:28] Merged 1980715 bytes (1.89 MiB) for 'locations_default'.
+[2026-04-29 13:04:28] Merging 6 fragments for 'hasLocation'.
+[2026-04-29 13:04:28] Merged 1253219 bytes (1.20 MiB) for 'hasLocation'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'extraction_data'.
+[2026-04-29 13:04:28] Merged 1657 bytes (1.62 KiB) for 'extraction_data'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'json'.
+[2026-04-29 13:04:28] Merged 779 bytes for 'json'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'json_locations'.
+[2026-04-29 13:04:28] Merged 350 bytes for 'json_locations'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'json_literals'.
+[2026-04-29 13:04:28] Merged 461 bytes for 'json_literals'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'json_properties'.
+[2026-04-29 13:04:28] Merged 398 bytes for 'json_properties'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'numlines'.
+[2026-04-29 13:04:28] Merged 5015 bytes (4.90 KiB) for 'numlines'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'filetype'.
+[2026-04-29 13:04:28] Merged 791 bytes for 'filetype'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'extraction_time'.
+[2026-04-29 13:04:28] Merged 55297 bytes (54.00 KiB) for 'extraction_time'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'yaml_scalars'.
+[2026-04-29 13:04:28] Merged 49431 bytes (48.27 KiB) for 'yaml_scalars'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'yaml'.
+[2026-04-29 13:04:28] Merged 144778 bytes (141.38 KiB) for 'yaml'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'yaml_locations'.
+[2026-04-29 13:04:28] Merged 41389 bytes (40.42 KiB) for 'yaml_locations'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'scopes'.
+[2026-04-29 13:04:28] Merged 11606 bytes (11.33 KiB) for 'scopes'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'indentation'.
+[2026-04-29 13:04:28] Merged 76273 bytes (74.49 KiB) for 'indentation'.
+[2026-04-29 13:04:28] Merging 3 fragments for 'tokeninfo'.
+[2026-04-29 13:04:28] Merged 1420764 bytes (1.35 MiB) for 'tokeninfo'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'toplevels'.
+[2026-04-29 13:04:28] Merged 754 bytes for 'toplevels'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'variables'.
+[2026-04-29 13:04:28] Merged 92239 bytes (90.08 KiB) for 'variables'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'scopenodes'.
+[2026-04-29 13:04:28] Merged 17038 bytes (16.64 KiB) for 'scopenodes'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'scopenesting'.
+[2026-04-29 13:04:28] Merged 14862 bytes (14.51 KiB) for 'scopenesting'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'is_module'.
+[2026-04-29 13:04:28] Merged 602 bytes for 'is_module'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'stmts'.
+[2026-04-29 13:04:28] Merged 207311 bytes (202.45 KiB) for 'stmts'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'stmt_containers'.
+[2026-04-29 13:04:28] Merged 72289 bytes (70.59 KiB) for 'stmt_containers'.
+[2026-04-29 13:04:28] Merging 2 fragments for 'exprs'.
+[2026-04-29 13:04:28] Merged 1144889 bytes (1.09 MiB) for 'exprs'.
+[2026-04-29 13:04:28] Merging 2 fragments for 'enclosing_stmt'.
+[2026-04-29 13:04:28] Merged 221813 bytes (216.61 KiB) for 'enclosing_stmt'.
+[2026-04-29 13:04:28] Merging 2 fragments for 'expr_containers'.
+[2026-04-29 13:04:28] Merged 214569 bytes (209.54 KiB) for 'expr_containers'.
+[2026-04-29 13:04:28] Merging 2 fragments for 'literals'.
+[2026-04-29 13:04:28] Merged 204568 bytes (199.77 KiB) for 'literals'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'bind'.
+[2026-04-29 13:04:28] Merged 71671 bytes (69.99 KiB) for 'bind'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'properties'.
+[2026-04-29 13:04:28] Merged 44824 bytes (43.77 KiB) for 'properties'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'regexpterm'.
+[2026-04-29 13:04:28] Merged 134430 bytes (131.28 KiB) for 'regexpterm'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'regexp_const_value'.
+[2026-04-29 13:04:28] Merged 42267 bytes (41.28 KiB) for 'regexp_const_value'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'array_size'.
+[2026-04-29 13:04:28] Merged 2268 bytes (2.21 KiB) for 'array_size'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'entry_cfg_node'.
+[2026-04-29 13:04:28] Merged 14975 bytes (14.62 KiB) for 'entry_cfg_node'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'exit_cfg_node'.
+[2026-04-29 13:04:28] Merged 14975 bytes (14.62 KiB) for 'exit_cfg_node'.
+[2026-04-29 13:04:28] Merging 3 fragments for 'successor'.
+[2026-04-29 13:04:28] Merged 462989 bytes (452.14 KiB) for 'successor'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'is_nodejs'.
+[2026-04-29 13:04:28] Merged 89 bytes for 'is_nodejs'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'comments'.
+[2026-04-29 13:04:28] Merged 44410 bytes (43.37 KiB) for 'comments'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'next_token'.
+[2026-04-29 13:04:28] Merged 24306 bytes (23.74 KiB) for 'next_token'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'is_es2015_module'.
+[2026-04-29 13:04:28] Merged 529 bytes for 'is_es2015_module'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'local_type_names'.
+[2026-04-29 13:04:28] Merged 8416 bytes (8.22 KiB) for 'local_type_names'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'local_namespace_names'.
+[2026-04-29 13:04:28] Merged 7354 bytes (7.18 KiB) for 'local_namespace_names'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'decl'.
+[2026-04-29 13:04:28] Merged 30354 bytes (29.64 KiB) for 'decl'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'typedecl'.
+[2026-04-29 13:04:28] Merged 5237 bytes (5.11 KiB) for 'typedecl'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'namespacedecl'.
+[2026-04-29 13:04:28] Merged 4628 bytes (4.52 KiB) for 'namespacedecl'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'jsdoc'.
+[2026-04-29 13:04:28] Merged 20467 bytes (19.99 KiB) for 'jsdoc'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'jsdoc_tags'.
+[2026-04-29 13:04:28] Merged 121915 bytes (119.06 KiB) for 'jsdoc_tags'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'jsdoc_tag_descriptions'.
+[2026-04-29 13:04:28] Merged 7364 bytes (7.19 KiB) for 'jsdoc_tag_descriptions'.
+[2026-04-29 13:04:28] Merging 1 fragment for 'jsdoc_type_exprs'.
+[2026-04-29 13:04:28] Merged 134418 bytes (131.27 KiB) for 'jsdoc_type_exprs'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'jsdoc_errors'.
+[2026-04-29 13:04:29] Merged 1755 bytes (1.71 KiB) for 'jsdoc_errors'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'isOptionalChaining'.
+[2026-04-29 13:04:29] Merged 257 bytes for 'isOptionalChaining'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'guard_node'.
+[2026-04-29 13:04:29] Merged 17308 bytes (16.90 KiB) for 'guard_node'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'typeexprs'.
+[2026-04-29 13:04:29] Merged 30322 bytes (29.61 KiB) for 'typeexprs'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'namespacebind'.
+[2026-04-29 13:04:29] Merged 63 bytes for 'namespacebind'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'typebind'.
+[2026-04-29 13:04:29] Merged 2019 bytes (1.97 KiB) for 'typebind'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'is_abstract_class'.
+[2026-04-29 13:04:29] Merged 23 bytes for 'is_abstract_class'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'is_static'.
+[2026-04-29 13:04:29] Merged 630 bytes for 'is_static'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'is_capture'.
+[2026-04-29 13:04:29] Merged 715 bytes for 'is_capture'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'is_greedy'.
+[2026-04-29 13:04:29] Merged 478 bytes for 'is_greedy'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'has_protected_keyword'.
+[2026-04-29 13:04:29] Merged 29 bytes for 'has_protected_keyword'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'has_definite_assignment_assertion'.
+[2026-04-29 13:04:29] Merged 27 bytes for 'has_definite_assignment_assertion'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'has_public_keyword'.
+[2026-04-29 13:04:29] Merged 281 bytes for 'has_public_keyword'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'is_arguments_object'.
+[2026-04-29 13:04:29] Merged 4742 bytes (4.63 KiB) for 'is_arguments_object'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'is_abstract_member'.
+[2026-04-29 13:04:29] Merged 1050 bytes (1.03 KiB) for 'is_abstract_member'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'is_optional_member'.
+[2026-04-29 13:04:29] Merged 436 bytes for 'is_optional_member'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'is_async'.
+[2026-04-29 13:04:29] Merged 977 bytes for 'is_async'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'is_method'.
+[2026-04-29 13:04:29] Merged 649 bytes for 'is_method'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'has_rest_parameter'.
+[2026-04-29 13:04:29] Merged 274 bytes for 'has_rest_parameter'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'has_type_keyword'.
+[2026-04-29 13:04:29] Merged 40 bytes for 'has_type_keyword'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'is_optional_parameter_declaration'.
+[2026-04-29 13:04:29] Merged 149 bytes for 'is_optional_parameter_declaration'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'has_private_keyword'.
+[2026-04-29 13:04:29] Merged 175 bytes for 'has_private_keyword'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'jump_targets'.
+[2026-04-29 13:04:29] Merged 165 bytes for 'jump_targets'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'char_class_escape'.
+[2026-04-29 13:04:29] Merged 142 bytes for 'char_class_escape'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'range_quantifier_lower_bound'.
+[2026-04-29 13:04:29] Merged 119 bytes for 'range_quantifier_lower_bound'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'range_quantifier_upper_bound'.
+[2026-04-29 13:04:29] Merged 79 bytes for 'range_quantifier_upper_bound'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'has_readonly_keyword'.
+[2026-04-29 13:04:29] Merged 25 bytes for 'has_readonly_keyword'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'is_computed'.
+[2026-04-29 13:04:29] Merged 22 bytes for 'is_computed'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'jsdoc_tag_names'.
+[2026-04-29 13:04:29] Merged 16180 bytes (15.80 KiB) for 'jsdoc_tag_names'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'sourceLocationPrefix'.
+[2026-04-29 13:04:29] Merged 17 bytes for 'sourceLocationPrefix'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'is_externs'.
+[2026-04-29 13:04:29] Merged 225 bytes for 'is_externs'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'jsdoc_prefix_qualifier'.
+[2026-04-29 13:04:29] Merged 1894 bytes (1.85 KiB) for 'jsdoc_prefix_qualifier'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'jsdoc_record_field_name'.
+[2026-04-29 13:04:29] Merged 1716 bytes (1.68 KiB) for 'jsdoc_record_field_name'.
+[2026-04-29 13:04:29] Merging 1 fragment for 'jsdoc_has_new_parameter'.
+[2026-04-29 13:04:29] Merged 35 bytes for 'jsdoc_has_new_parameter'.
+[2026-04-29 13:04:29] Saving string and id pools to disk.
+[2026-04-29 13:04:29] Finished importing TRAP files.
+[2026-04-29 13:04:29] Read 108.60 MiB of uncompressed TRAP data.
+[2026-04-29 13:04:29] Uncompressed relation data size: 33.78 MiB
+[2026-04-29 13:04:29] Relation data size: 8.12 MiB (merge rate: 8.63 MiB/s)
+[2026-04-29 13:04:29] String pool size: 5.53 MiB
+[2026-04-29 13:04:29] ID pool size: 27.00 MiB
+[2026-04-29 13:04:29] [PROGRESS] dataset import> Finished writing database (relations: 8.12 MiB; string pool: 5.53 MiB).
+[2026-04-29 13:04:29] Pausing evaluation to close the cache at sequence stamp o+207
+[2026-04-29 13:04:29] The disk cache is freshly trimmed; leave it be.
+[2026-04-29 13:04:29] Unpausing evaluation
+[2026-04-29 13:04:29] Plumbing command codeql dataset import completed.
+[2026-04-29 13:04:29] [PROGRESS] database finalize> TRAP import complete (14.1s).
+[2026-04-29 13:04:29] Running plumbing command: codeql database cleanup -- /home/aoi/dev/metaplex-cli/codeql-db
+[2026-04-29 13:04:31] [PROGRESS] database cleanup> Cleaning up existing TRAP files after import...
+[2026-04-29 13:04:31] [PROGRESS] database cleanup> TRAP files cleaned up (69ms).
+[2026-04-29 13:04:31] [PROGRESS] database cleanup> Cleaning up scratch directory...
+[2026-04-29 13:04:31] [PROGRESS] database cleanup> Scratch directory cleaned up (4ms).
+[2026-04-29 13:04:31] Running plumbing command: codeql dataset cleanup -- /home/aoi/dev/metaplex-cli/codeql-db/db-javascript
+[2026-04-29 13:04:31] [PROGRESS] dataset cleanup> Cleaning up dataset in /home/aoi/dev/metaplex-cli/codeql-db/db-javascript.
+[2026-04-29 13:04:31] Trimming disk cache at /home/aoi/dev/metaplex-cli/codeql-db/db-javascript/default/cache in mode trim.
+[2026-04-29 13:04:31] Sequence stamp origin is -5919657768556728843
+[2026-04-29 13:04:31] Pausing evaluation to quickly trim memory at sequence stamp o+0
+[2026-04-29 13:04:31] Unpausing evaluation
+[2026-04-29 13:04:31] Pausing evaluation to zealously trim disk at sequence stamp o+1
+[2026-04-29 13:04:31] Unpausing evaluation
+[2026-04-29 13:04:31] Trimming completed (3ms): Trimmed disposable data from cache.
+[2026-04-29 13:04:31] Pausing evaluation to close the cache at sequence stamp o+2
+[2026-04-29 13:04:31] The disk cache is freshly trimmed; leave it be.
+[2026-04-29 13:04:31] Unpausing evaluation
+[2026-04-29 13:04:31] [PROGRESS] dataset cleanup> Trimmed disposable data from cache.
+[2026-04-29 13:04:31] [PROGRESS] dataset cleanup> Finalizing dataset in /home/aoi/dev/metaplex-cli/codeql-db/db-javascript
+[2026-04-29 13:04:31] [DETAILS] dataset cleanup> Finished deleting ID pool from /home/aoi/dev/metaplex-cli/codeql-db/db-javascript (8ms).
+[2026-04-29 13:04:31] Plumbing command codeql dataset cleanup completed.
+[2026-04-29 13:04:31] Plumbing command codeql database cleanup completed with status 0.
+[2026-04-29 13:04:31] [PROGRESS] database finalize> Finished zipping source archive (748.37 KiB).
+[2026-04-29 13:04:31] Terminating normally.

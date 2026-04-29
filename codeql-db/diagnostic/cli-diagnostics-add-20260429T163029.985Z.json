@@ -1,0 +1,1 @@
+{"timestamp":"2026-04-29T12:30:33.316616492-04:00","source":{"id":"cli/database/create","name":"CodeQL CLI: database create"},"plaintextMessage":"A fatal error occurred: Exit status 1 from command: [pnpm, install, &&, pnpm, run, build]","severity":"error","visibility":{"telemetry":false},"attributes":{"exitCode":2}}
