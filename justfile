@@ -133,6 +133,13 @@ gitnexus-analyze:
     @echo "analyzing with gitnexus"
     npx gitnexus analyze
 
+
+gitnexus-serve:
+    @echo "serve gitnexus, gui at https://gitnexus.vercel.app/ "
+    npx gitnexus@latest serve
+
+
+
 codeql-status:
     @echo "CodeQL binary (if installed):"
     ls -l {{CODEQL_DIR}}/codeql || true
@@ -164,3 +171,4 @@ run:
     just codeql-create-db
     just codeql-analyze
     just gitnexus-analyze
+    just gitnexus-serve
