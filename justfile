@@ -20,6 +20,7 @@ help:
     @echo "  test-mocha           - test with mocha"
     @echo "  setup-solana-for-local-validator           - setup solana for local validator"
     @echo "  run-solana-local-validator           - run solana local validator"
+    @echo "  run-solana-local-validator           - run solana local validator"
     @echo "  npm-publish-dry-run           - npm-publish-dry-run"
     @echo "  run           - combines download-codeql codeql-create-db codeql-analyze gitnexus-analyze"
 
@@ -52,7 +53,7 @@ gitnexus-analyze:
     npx gitnexus analyze
 
 gitnexus-wiki:
-    @echo "analyzing with gitnexus"
+    @echo "creating a wiki with gitnexus"
     npx gitnexus wiki
 
 
@@ -94,4 +95,6 @@ dependabot-update:
 
 run:
     just gitnexus-analyze
+    just gitnexus-wiki
     just gitnexus-serve
+    just run-solana-airdrop
