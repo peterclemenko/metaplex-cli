@@ -39,7 +39,7 @@ run-solana-local-validator *args:
       {{ args }} > server.log 2>&1 &
 
 
-run-solana-airdrop:
+solana-airdrop:
     just setup-solana-for-local-validator
     just run-solana-local-validator
 

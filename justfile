@@ -34,4 +34,4 @@ run:
     just gitnexus-analyze
     just gitnexus-wiki
     just gitnexus-serve
-    just run-solana-airdrop
+    just solana-airdrop
