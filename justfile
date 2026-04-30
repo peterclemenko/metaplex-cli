@@ -24,7 +24,7 @@ help:
     @echo "  test-mocha           - test with mocha"
     @echo "  setup-solana-for-local-validator           - setup solana for local validator"
     @echo "  run-solana-local-validator           - run solana local validator"
-    @echo "  run-solana-airdrop           - run airdrop 5 sol"
+    @echo "  solana-airdrop           - run airdrop 5 sol"
     @echo "  npm-publish-dry-run           - npm-publish-dry-run"
     @echo "  run           - combines download-codeql codeql-create-db codeql-analyze gitnexus-analyze"
 
@@ -34,4 +34,4 @@ run:
     just gitnexus-analyze
     just gitnexus-wiki
     just gitnexus-serve
-    just solana-airdrop
+    just run-solana-local-validator  
