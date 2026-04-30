@@ -15,10 +15,12 @@ setup-solana-for-local-validator:
 
     solana config set --url http://127.0.0.1:8899
 
+    
+
 run-solana-local-validator *args:
     just setup-solana-for-local-validator
 
-    solana-test-validator -r \
+    nohup solana-test-validator -r \
       --bpf-program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s ~/.local/share/metaplex-local-validator/mpl-token-metadata.so \
       --bpf-program BGUMAp9Gq7iTEuizy4pqaxsTyUCBK68MDfK752saRPUY ~/.local/share/metaplex-local-validator/mpl-bubblegum.so \
       --bpf-program CoREENxT6tW1HoK8ypY1SxRMZTcVPm7R94rH4PZNhX7d ~/.local/share/metaplex-local-validator/mpl-core.so \
@@ -34,4 +36,12 @@ run-solana-local-validator *args:
       --bpf-program MPL4o4wMzndgh8T1NVDxELQCj5UQfYTYEkabX3wNKtb ~/.local/share/metaplex-local-validator/mpl-hybrid.so \
       --bpf-program auth9SigNpDKz4sJJ1DfCTuZrZNSAgh9sFD3rboVmgg ~/.local/share/metaplex-local-validator/mpl-token-auth-rules.so \
       --bpf-program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s ~/.local/share/metaplex-local-validator/mpl-token-metadata.so \
-      {{ args }}
+      {{ args }} > server.log 2>&1 &
+
+
+run-solana-airdrop:
+    just setup-solana-for-local-validator
+    just run-solana-local-validator
+
+
+    solana airdrop 25

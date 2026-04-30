@@ -37,3 +37,5 @@ testCmW
 codeql-db
 
 test-ledger
+just/nohup.out
+just/server.log

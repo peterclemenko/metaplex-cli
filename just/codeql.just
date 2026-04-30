@@ -1,3 +1,5 @@
+# justfile
+
 CODEQL_DIR := "tools/codeql"
 CODEQL_ZIP := "codeql.zip"
 CODEQL_URL := "https://github.com/github/codeql-cli-binaries/releases/latest/download/codeql-linux64.zip"
@@ -23,6 +25,12 @@ download-codeql:
         fi; \
     fi; \
     echo "CodeQL available at: $(if command -v {{CODEQL_DIR}}/codeql >/dev/null 2>&1; then {{CODEQL_DIR}}/codeql --version 2>/dev/null || true; else command -v codeql || echo 'unknown'; fi)"
+
+
+codeql-clean-db:
+    @echo "Removing codeql-db, results and downloaded CodeQL"
+    rm -rf codeql-db results.sarif {{CODEQL_DIR}}
+
 
 codeql-create-db:
     @echo "Creating CodeQL DB 'codeql-db' (use BUILD_CMD and OVERWRITE env vars to override)"
