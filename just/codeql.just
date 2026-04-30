@@ -4,6 +4,12 @@ CODEQL_DIR := "tools/codeql"
 CODEQL_ZIP := "codeql.zip"
 CODEQL_URL := "https://github.com/github/codeql-cli-binaries/releases/latest/download/codeql-linux64.zip"
 
+
+codeql-status:
+    @echo "CodeQL binary (if installed):"
+    ls -l {{CODEQL_DIR}}/codeql || true
+    if [ -d codeql-db ]; then {{CODEQL_DIR}}/codeql database info codeql-db || true; else echo "No codeql-db present"; fi
+
 download-codeql:
     @echo "Ensuring CodeQL CLI is available (skips download if present)..."
     if command -v codeql >/dev/null 2>&1; then \

@@ -44,4 +44,4 @@ run-solana-airdrop:
     just run-solana-local-validator
 
 
-    solana airdrop 25
+    solana airdrop 5 &

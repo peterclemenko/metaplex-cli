@@ -1,3 +1,18 @@
+<!-- justfile:start -->
+# justfile, cli replacement
+## Always Do
+
+- **MUST check the justfile and commands in the just file before trying to use the cli.** 
+to protect cli integrity and reduce failures, the justfiles are used to create reproduceable cli commands  that are to be used over trying to randomly reason about commands. Check the just files in /just for commands that work
+- **MUST check the justfile and commands in the just file before trying to use the cli.** 
+to protect cli integrity and reduce failures, the justfiles are used to create reproduceable cli commands  that are to be used over trying to randomly reason about commands.
+
+on successful new commands, 
+always use the justfile when possible
+<!-- justfile:end -->
+
+This project is indexed by GitNexus as **metaplex-cli** (5335 symbols, 8522 relationships, 300 execution flows). 
+This project is indexed by GitNexus as **metaplex-cli** (5335 symbols, 8522 relationships, 300 execution flows). 
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
 
