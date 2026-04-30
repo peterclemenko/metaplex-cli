@@ -1,0 +1,14 @@
+module.exports = {
+  bin: 'mplx',
+  dirname: 'mplx',
+  commands: './dist/commands',
+  plugins: [
+    '@oclif/plugin-help',
+    '@oclif/plugin-autocomplete',
+    '@oclif/plugin-commands',
+    '@oclif/plugin-not-found',
+    '@oclif/plugin-version',
+  ],
+  topicSeparator: ' ',
+
+};

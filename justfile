@@ -45,7 +45,7 @@ download-codeql:
 
 codeql-create-db:
     @echo "Creating CodeQL DB 'codeql-db' (use BUILD_CMD and OVERWRITE env vars to override)"
-    BUILD_CMD="${BUILD_CMD:-pnpm install && pnpm run build}"; \
+    BUILD_CMD="${BUILD_CMD:-sh -lc 'pnpm install && pnpm run build'}"; \
     OVERWRITE="${OVERWRITE:-false}"; \
     CODEQL_BIN="{{CODEQL_DIR}}/codeql"; \
     if [ -x "$CODEQL_BIN" ]; then \
@@ -61,8 +61,13 @@ codeql-create-db:
             echo "Overwriting existing codeql-db (OVERWRITE=true)."; \
             OVERWRITE_FLAG="--overwrite"; \
         else \
-            echo "Found existing 'codeql-db' — skipping create (set OVERWRITE=true to recreate)."; \
-            exit 0; \
+            if "$CMD" database info codeql-db >/dev/null 2>&1; then \
+                echo "Found existing 'codeql-db' — skipping create (set OVERWRITE=true to recreate)."; \
+                exit 0; \
+            else \
+                echo "Directory 'codeql-db' exists but is not a valid CodeQL DB; recreating."; \
+                rm -rf codeql-db; \
+            fi; \
         fi; \
     fi; \
     "$CMD" database create codeql-db --language=javascript --command "$BUILD_CMD" $OVERWRITE_FLAG
@@ -136,7 +141,11 @@ gitnexus-analyze:
 
 gitnexus-serve:
     @echo "serve gitnexus, gui at https://gitnexus.vercel.app/ "
-    npx gitnexus@latest serve
+    @if ss -ltnp 2>/dev/null | grep -q ':4747' || lsof -i :4747 >/dev/null 2>&1; then \
+        echo "Port 4747 already in use; skipping gitnexus serve."; \
+    else \
+        npx gitnexus@latest serve; \
+    fi
 
 
 
@@ -167,8 +176,5 @@ dependabot-update:
     dependabot update "$PM" "$REPO"
 
 run:
-    just download-codeql
-    just codeql-create-db
-    just codeql-analyze
     just gitnexus-analyze
     just gitnexus-serve

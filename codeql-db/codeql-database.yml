@@ -1,0 +1,46 @@
+---
+sourceLocationPrefix: /home/aoi/dev/metaplex-cli
+baselineLinesOfCode: 27619
+unicodeNewlines: true
+columnKind: utf16
+primaryLanguage: javascript
+inProgress:
+  primaryLanguage: javascript
+  installedExtractors:
+    yaml:
+     - /nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/yaml
+    html:
+     - /nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/html
+    ruby:
+     - /nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/ruby
+    actions:
+     - /nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/actions
+    go:
+     - /nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/go
+    cpp:
+     - /nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/cpp
+    csharp:
+     - /nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/csharp
+    properties:
+     - /nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/properties
+    swift:
+     - /nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/swift
+    xml:
+     - /nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/xml
+    csv:
+     - /nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/csv
+    java:
+     - /nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/java
+    javascript:
+     - /nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript
+    rust:
+     - /nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/rust
+    python:
+     - /nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/python
+creationMetadata:
+  sha: 8d9e841a463834e764474612cf82e22dc2e6dd84
+  cliVersion: 2.25.2
+  creationTime: 2026-04-30T00:31:19.841741060Z
+overlayBaseDatabase: false
+overlayDatabase: false
+finalised: false

@@ -1,0 +1,25 @@
+import { UmiSendAndConfirmResponse } from '../../umi/sendAllTransactionsAndConfirm.js'
+import { PluginData } from '../pluginData.js'
+import { BaseCache, BaseCacheItem } from './baseCache.js'
+
+export interface CreationCacheItem extends BaseCacheItem {
+  assetId: string
+  owner?: string
+  name: string
+  imageUri: string
+  metadataUri: string
+  pluginData?: PluginData[]
+  tx?: UmiSendAndConfirmResponse
+}
+
+export interface CreateCache extends BaseCache {
+  name: 'createCache'
+  items: CreationCacheItem[]
+  globalPlugins?: PluginData
+}
+
+export interface CreateAssetsFromDirectoryCache extends BaseCache {
+  name: 'createAssetsFromDirectory'
+  directoryPath: string
+  items: CreationCacheItem[]
+}
