@@ -1,0 +1,14 @@
+{
+  "repoPath": "/home/aoi/dev/metaplex-cli",
+  "lastCommit": "86ef3d707b1825bac3afc94a100caa185e97600a",
+  "indexedAt": "2026-05-05T03:14:07.092Z",
+  "remoteUrl": "git@github.com:peterclemenko/metaplex-cli",
+  "stats": {
+    "files": 534,
+    "nodes": 5865,
+    "edges": 9113,
+    "communities": 137,
+    "processes": 300,
+    "embeddings": 0
+  }
+}

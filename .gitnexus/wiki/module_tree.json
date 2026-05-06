@@ -1,0 +1,1028 @@
+[
+  {
+    "name": "Base Command Classes",
+    "slug": "base-command-classes",
+    "files": [
+      "src/BaseCommand.ts",
+      "src/TransactionCommand.ts"
+    ]
+  },
+  {
+    "name": "Agents Commands",
+    "slug": "agents-commands",
+    "files": [
+      "src/commands/agents/index.ts",
+      "src/commands/agents/fetch.ts",
+      "src/commands/agents/register.ts",
+      "src/commands/agents/set-agent-token.ts",
+      "src/commands/agents/executive/index.ts",
+      "src/commands/agents/executive/delegate.ts",
+      "src/commands/agents/executive/register.ts",
+      "src/commands/agents/executive/revoke.ts"
+    ]
+  },
+  {
+    "name": "Bubblegum (Compressed NFT) Commands",
+    "slug": "bubblegum-compressed-nft-commands",
+    "files": [
+      "src/commands/bg/index.ts",
+      "src/commands/bg/collection/index.ts",
+      "src/commands/bg/collection/create.ts",
+      "src/commands/bg/tree/index.ts",
+      "src/commands/bg/tree/create.ts",
+      "src/commands/bg/tree/list.ts",
+      "src/commands/bg/nft/index.ts",
+      "src/commands/bg/nft/create.ts",
+      "src/commands/bg/nft/fetch.ts",
+      "src/commands/bg/nft/transfer.ts",
+      "src/commands/bg/nft/update.ts",
+      "src/commands/bg/nft/burn.ts"
+    ]
+  },
+  {
+    "name": "Candy Machine Commands",
+    "slug": "candy-machine-commands",
+    "files": [
+      "src/commands/cm/index.ts",
+      "src/commands/cm/create.ts",
+      "src/commands/cm/fetch.ts",
+      "src/commands/cm/insert.ts",
+      "src/commands/cm/upload.ts",
+      "src/commands/cm/validate.ts",
+      "src/commands/cm/withdraw.ts",
+      "src/commands/cm/guard/index.ts",
+      "src/commands/cm/guard/delete.ts",
+      "src/commands/cm/guard/remove.ts",
+      "src/commands/cm/guard/update.ts"
+    ]
+  },
+  {
+    "name": "Configuration Commands",
+    "slug": "configuration-commands",
+    "files": [
+      "src/commands/config/index.ts",
+      "src/commands/config/get.ts",
+      "src/commands/config/set.ts",
+      "src/commands/config/explorer/index.ts",
+      "src/commands/config/explorer/set.ts",
+      "src/commands/config/rpcs/index.ts",
+      "src/commands/config/rpcs/add.ts",
+      "src/commands/config/rpcs/list.ts",
+      "src/commands/config/rpcs/remove.ts",
+      "src/commands/config/rpcs/set.ts",
+      "src/commands/config/storage/index.ts",
+      "src/commands/config/storage/set.ts",
+      "src/commands/config/wallets/index.ts",
+      "src/commands/config/wallets/add.ts",
+      "src/commands/config/wallets/list.ts",
+      "src/commands/config/wallets/new.ts",
+      "src/commands/config/wallets/remove.ts",
+      "src/commands/config/wallets/set.ts"
+    ]
+  },
+  {
+    "name": "Core NFT Commands",
+    "slug": "core-nft-commands",
+    "files": [
+      "src/commands/core/index.ts",
+      "src/commands/core/asset/index.ts",
+      "src/commands/core/asset/create.ts",
+      "src/commands/core/asset/fetch.ts",
+      "src/commands/core/asset/transfer.ts",
+      "src/commands/core/asset/update.ts",
+      "src/commands/core/asset/burn.ts",
+      "src/commands/core/asset/template.ts",
+      "src/commands/core/asset/execute/index.ts",
+      "src/commands/core/asset/execute/info.ts",
+      "src/commands/core/collection/index.ts",
+      "src/commands/core/collection/create.ts",
+      "src/commands/core/collection/fetch.ts",
+      "src/commands/core/collection/add.ts",
+      "src/commands/core/collection/template.ts",
+      "src/commands/core/plugins/index.ts",
+      "src/commands/core/plugins/add.ts",
+      "src/commands/core/plugins/generate.ts",
+      "src/commands/core/plugins/update.ts"
+    ]
+  },
+  {
+    "name": "Distribution Commands",
+    "slug": "distribution-commands",
+    "files": [
+      "src/commands/distro/index.ts",
+      "src/commands/distro/create.ts",
+      "src/commands/distro/deposit.ts",
+      "src/commands/distro/fetch.ts",
+      "src/commands/distro/withdraw.ts"
+    ]
+  },
+  {
+    "name": "Genesis Commands",
+    "slug": "genesis-commands",
+    "files": [
+      "src/commands/genesis/index.ts",
+      "src/commands/genesis/create.ts",
+      "src/commands/genesis/fetch.ts",
+      "src/commands/genesis/deposit.ts",
+      "src/commands/genesis/withdraw.ts",
+      "src/commands/genesis/claim.ts",
+      "src/commands/genesis/claim-unlocked.ts",
+      "src/commands/genesis/finalize.ts",
+      "src/commands/genesis/revoke.ts",
+      "src/commands/genesis/swap.ts",
+      "src/commands/genesis/transition.ts",
+      "src/commands/genesis/bucket/index.ts",
+      "src/commands/genesis/bucket/add-launch-pool.ts",
+      "src/commands/genesis/bucket/add-presale.ts",
+      "src/commands/genesis/bucket/add-unlocked.ts",
+      "src/commands/genesis/bucket/fetch.ts",
+      "src/commands/genesis/launch/index.ts",
+      "src/commands/genesis/launch/create.ts",
+      "src/commands/genesis/launch/register.ts",
+      "src/commands/genesis/presale/index.ts",
+      "src/commands/genesis/presale/claim.ts",
+      "src/commands/genesis/presale/deposit.ts"
+    ]
+  },
+  {
+    "name": "Token Metadata Commands",
+    "slug": "token-metadata-commands",
+    "files": [
+      "src/commands/tm/index.ts",
+      "src/commands/tm/create.ts",
+      "src/commands/tm/transfer.ts",
+      "src/commands/tm/update.ts"
+    ]
+  },
+  {
+    "name": "Toolbox Commands",
+    "slug": "toolbox-commands",
+    "files": [
+      "src/commands/toolbox/index.ts",
+      "src/commands/toolbox/rent.ts",
+      "src/commands/toolbox/transaction.ts",
+      "src/commands/toolbox/lut/index.ts",
+      "src/commands/toolbox/lut/create.ts",
+      "src/commands/toolbox/lut/close.ts",
+      "src/commands/toolbox/lut/deactivate.ts",
+      "src/commands/toolbox/lut/fetch.ts",
+      "src/commands/toolbox/sol/index.ts",
+      "src/commands/toolbox/sol/airdrop.ts",
+      "src/commands/toolbox/sol/balance.ts",
+      "src/commands/toolbox/sol/transfer.ts",
+      "src/commands/toolbox/sol/unwrap.ts",
+      "src/commands/toolbox/sol/wrap.ts",
+      "src/commands/toolbox/storage/index.ts",
+      "src/commands/toolbox/storage/balance.ts",
+      "src/commands/toolbox/storage/fund.ts",
+      "src/commands/toolbox/storage/upload.ts",
+      "src/commands/toolbox/storage/withdraw.ts",
+      "src/commands/toolbox/template/index.ts",
+      "src/commands/toolbox/template/program.ts",
+      "src/commands/toolbox/template/website.ts",
+      "src/commands/toolbox/token/index.ts",
+      "src/commands/toolbox/token/create.ts",
+      "src/commands/toolbox/token/add-metadata.ts",
+      "src/commands/toolbox/token/mint.ts",
+      "src/commands/toolbox/token/transfer.ts",
+      "src/commands/toolbox/token/update.ts"
+    ]
+  },
+  {
+    "name": "Context & Signers",
+    "slug": "context-signers",
+    "files": [
+      "src/lib/Context.ts",
+      "src/lib/FileSigner.ts",
+      "src/lib/LedgerSigner.ts"
+    ]
+  },
+  {
+    "name": "UMI Transaction Utilities",
+    "slug": "umi-transaction-utilities",
+    "files": [
+      "src/lib/umi/assetSignerPlugin.ts",
+      "src/lib/umi/confirmTransaction.ts",
+      "src/lib/umi/sendOptions.ts",
+      "src/lib/umi/sendTransaction.ts",
+      "src/lib/umi/sendAndConfirm.ts",
+      "src/lib/umi/sendAllTransactions.ts",
+      "src/lib/umi/sendAllTransactionsAndConfirm.ts",
+      "src/lib/umi/wrapForAssetSigner.ts"
+    ]
+  },
+  {
+    "name": "Storage & Upload Providers",
+    "slug": "storage-upload-providers",
+    "files": [
+      "src/lib/uploader/uploadFile.ts",
+      "src/lib/uploader/uploadFiles.ts",
+      "src/lib/uploader/uploadDirectory.ts",
+      "src/lib/uploader/uploadProviders/index.ts"
+    ]
+  },
+  {
+    "name": "Candy Machine Library",
+    "slug": "candy-machine-library",
+    "files": [
+      "src/lib/cm/cm-utils.ts",
+      "src/lib/cm/types.ts",
+      "src/lib/cm/uploadItems.ts"
+    ]
+  },
+  {
+    "name": "Core NFT Library",
+    "slug": "core-nft-library",
+    "files": [
+      "src/lib/core/create/cache.ts",
+      "src/lib/core/create/createAssetFromArgs.ts"
+    ]
+  },
+  {
+    "name": "Genesis Library",
+    "slug": "genesis-library",
+    "files": [
+      "src/lib/genesis/createGenesisWizardPrompt.ts",
+      "src/lib/genesis/launchApi.ts",
+      "src/lib/genesis/operations.ts",
+      "src/lib/genesis/wizard.ts"
+    ]
+  },
+  {
+    "name": "Distribution Library",
+    "slug": "distribution-library",
+    "files": [
+      "src/lib/distro/prompts/create-distro-wizard.ts"
+    ]
+  },
+  {
+    "name": "General Utilities",
+    "slug": "general-utilities",
+    "files": [
+      "src/lib/util.ts",
+      "src/lib/file.ts",
+      "src/lib/validations.ts",
+      "src/lib/treeStorage.ts",
+      "src/lib/types/pluginData.ts",
+      "src/lib/ui/uploadProgressHandler.ts",
+      "src/lib/execute/deserializeInstruction.ts",
+      "src/explorers.ts"
+    ]
+  },
+  {
+    "name": "Prompt Utilities",
+    "slug": "prompt-utilities",
+    "files": [
+      "src/prompts/agentDocumentPrompt.ts",
+      "src/prompts/booleanPrompt.ts",
+      "src/prompts/createAssetPrompt.ts",
+      "src/prompts/createBubblegumMetadataPrompt.ts",
+      "src/prompts/createTokenMetadataPrompt.ts",
+      "src/prompts/createTokenPrompt.ts",
+      "src/prompts/explorerSelectorPrompt.ts",
+      "src/prompts/pluginInquirer.ts",
+      "src/prompts/pluginSelector.ts",
+      "src/prompts/promptSelector.ts",
+      "src/prompts/rpcSelectorPrompt.ts",
+      "src/prompts/selectTreePrompt.ts",
+      "src/prompts/walletSelectPrompt.ts"
+    ]
+  },
+  {
+    "name": "Other",
+    "slug": "other",
+    "files": [],
+    "children": [
+      {
+        "name": "Other — AGENTS.md",
+        "slug": "other-agents-md",
+        "files": [
+          "AGENTS.md"
+        ]
+      },
+      {
+        "name": "Other — CLAUDE.md",
+        "slug": "other-claude-md",
+        "files": [
+          "CLAUDE.md"
+        ]
+      },
+      {
+        "name": "Other — COMMANDS.md",
+        "slug": "other-commands-md",
+        "files": [
+          "COMMANDS.md"
+        ]
+      },
+      {
+        "name": "Other — MCP_COMPATIBILITY.md",
+        "slug": "other-mcp-compatibility-md",
+        "files": [
+          "MCP_COMPATIBILITY.md"
+        ]
+      },
+      {
+        "name": "Other — README.md",
+        "slug": "other-readme-md",
+        "files": [
+          "README.md"
+        ]
+      },
+      {
+        "name": "Other — codeql-db",
+        "slug": "other-codeql-db",
+        "files": [
+          "codeql-db/baseline-info.json",
+          "codeql-db/codeql-database.yml"
+        ]
+      },
+      {
+        "name": "Other — codeql-db-diagnostic",
+        "slug": "other-codeql-db-diagnostic",
+        "files": [
+          "codeql-db/diagnostic/cli-diagnostics-add-20260430T003119.891Z.json",
+          "codeql-db/diagnostic/cli-diagnostics-add-20260430T003142.629Z.json"
+        ]
+      },
+      {
+        "name": "Other — codeql-db-src",
+        "slug": "other-codeql-db-src",
+        "files": [
+          "codeql-db/src/home/aoi/dev/metaplex-cli/eslint.config.js",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/oclif.manifest.json.js",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/package.json",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/scripts/createTestCandyMachineDirectory.js",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/BaseCommand.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/TransactionCommand.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/agents/executive/delegate.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/agents/executive/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/agents/executive/register.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/agents/executive/revoke.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/agents/fetch.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/agents/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/agents/register.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/agents/set-agent-token.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/bg/collection/create.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/bg/collection/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/bg/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/bg/nft/burn.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/bg/nft/create.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/bg/nft/fetch.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/bg/nft/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/bg/nft/transfer.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/bg/nft/update.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/bg/tree/create.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/bg/tree/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/bg/tree/list.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/cm/create.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/cm/fetch.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/cm/guard/delete.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/cm/guard/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/cm/guard/remove.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/cm/guard/update.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/cm/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/cm/insert.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/cm/upload.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/cm/validate.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/cm/withdraw.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/config/explorer/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/config/explorer/set.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/config/get.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/config/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/config/rpcs/add.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/config/rpcs/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/config/rpcs/list.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/config/rpcs/remove.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/config/rpcs/set.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/config/set.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/config/storage/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/config/storage/set.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/config/wallets/add.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/config/wallets/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/config/wallets/list.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/config/wallets/new.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/config/wallets/remove.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/config/wallets/set.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/core/asset/burn.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/core/asset/create.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/core/asset/execute/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/core/asset/execute/info.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/core/asset/fetch.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/core/asset/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/core/asset/template.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/core/asset/transfer.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/core/asset/update.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/core/collection/add.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/core/collection/create.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/core/collection/fetch.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/core/collection/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/core/collection/template.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/core/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/core/plugins/add.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/core/plugins/generate.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/core/plugins/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/core/plugins/update.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/distro/create.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/distro/deposit.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/distro/fetch.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/distro/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/distro/withdraw.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/genesis/bucket/add-launch-pool.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/genesis/bucket/add-presale.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/genesis/bucket/add-unlocked.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/genesis/bucket/fetch.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/genesis/bucket/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/genesis/claim-unlocked.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/genesis/claim.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/genesis/create.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/genesis/deposit.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/genesis/fetch.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/genesis/finalize.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/genesis/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/genesis/launch/create.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/genesis/launch/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/genesis/launch/register.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/genesis/presale/claim.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/genesis/presale/deposit.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/genesis/presale/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/genesis/revoke.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/genesis/swap.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/genesis/transition.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/genesis/withdraw.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/tm/create.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/tm/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/tm/transfer.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/tm/update.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/toolbox/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/toolbox/lut/close.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/toolbox/lut/create.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/toolbox/lut/deactivate.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/toolbox/lut/fetch.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/toolbox/lut/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/toolbox/rent.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/toolbox/sol/airdrop.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/toolbox/sol/balance.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/toolbox/sol/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/toolbox/sol/transfer.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/toolbox/sol/unwrap.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/toolbox/sol/wrap.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/toolbox/storage/balance.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/toolbox/storage/fund.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/toolbox/storage/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/toolbox/storage/upload.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/toolbox/storage/withdraw.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/toolbox/template/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/toolbox/template/program.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/toolbox/template/website.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/toolbox/token/add-metadata.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/toolbox/token/create.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/toolbox/token/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/toolbox/token/mint.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/toolbox/token/transfer.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/toolbox/token/update.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/commands/toolbox/transaction.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/constants.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/explorers.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/Context.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/FileSigner.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/LedgerSigner.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/StandardColors.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/cm/candyGuardsSchema.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/cm/cm-utils.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/cm/createCmTemplateFolder.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/cm/insertItems.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/cm/jsonGuardParser.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/cm/prompts/createCandyMachineWizardPrompt.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/cm/types.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/cm/uploadItems.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/cm/validateAssetsFolder.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/cm/validateCacheUploads.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/core/burn/batchBurn.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/core/burn/burnAssetTx.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/core/create/cache.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/core/create/createAssetFromArgs.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/core/create/createAssetFromFiles.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/core/create/createAssetsFromDirectory.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/core/create/createTx.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/core/create/prepareJsonMetadata.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/core/fetch/batchFetch.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/core/fetch/fetch.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/core/templates/offchainAssetTemplate.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/core/templates/offchainCollectionTemplate.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/core/update/batchUpdate.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/core/update/update.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/distro/prompts/create-distro-wizard.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/execute/deserializeInstruction.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/file.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/genesis.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/genesis/createGenesisWizardPrompt.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/genesis/launchApi.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/genesis/operations.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/genesis/wizard.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/metadata/fetchJsonMetadata.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/metadata/getMetadata.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/metadata/readJsonMetadataFromFile.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/toolbox/airdrop.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/treeStorage.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/types/pluginData.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/ui/uploadProgressHandler.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/umi/assetSignerPlugin.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/umi/confirmAllTransactions.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/umi/confirmTransaction.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/umi/logFailedTransactions.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/umi/sendAllTransactions.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/umi/sendAllTransactionsAndConfirm.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/umi/sendAndConfirm.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/umi/sendOptions.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/umi/sendTransaction.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/umi/wrapForAssetSigner.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/uploader/fetchAdvancedStorageProvider.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/uploader/imageUploader.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/uploader/initStorageProvider.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/uploader/resolveImageUri.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/uploader/uploadDirectory.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/uploader/uploadFile.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/uploader/uploadFiles.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/uploader/uploadJson.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/uploader/uploadProviders/cascade.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/uploader/uploadProviders/index.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/uploader/uploadProviders/irys.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/uploader/uploadProviders/turbo.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/util.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/lib/validations.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/prompts/agentDocumentPrompt.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/prompts/booleanPrompt.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/prompts/createAssetPrompt.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/prompts/createBubblegumMetadataPrompt.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/prompts/createTokenMetadataPrompt.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/prompts/createTokenPrompt.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/prompts/explorerSelectorPrompt.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/prompts/pluginInquirer.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/prompts/pluginSelector.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/prompts/promptSelector.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/prompts/rpcSelectorPrompt.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/prompts/selectTreePrompt.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/src/prompts/walletSelectPrompt.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/agents/agenthelpers.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/agents/agents.executive.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/agents/agents.fetch.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/agents/agents.register.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/agents/agents.revoke.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/agents/agents.set-agent-token.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/bg/bg.collection.create.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/bg/bg.integration.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/bg/bg.nft.burn.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/bg/bg.nft.create.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/bg/bg.nft.transfer.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/bg/bg.nft.update.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/bg/bg.tree.create.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/bg/bgcollectionhelpers.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/bg/bghelpers.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/bg/common.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/cm/cm.create.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/cm/cm.full.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/cm/cm.guard.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/cm/cm.insert.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/cm/cm.withdraw.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/cm/guard-parsing.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/core/core.asset-signer.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/core/core.asset.update.collection.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/core/core.burn.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/core/core.collection.create.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/core/core.create.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/core/core.execute.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/core/core.plugins.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/core/core.prepareJsonMetadata.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/core/core.transfer.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/core/corehelpers.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/distro/distro.create.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/distro/distro.deposit.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/distro/distro.withdraw.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/genesis/genesis.create.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/genesis/genesis.integration.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/genesis/genesis.launch.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/genesis/genesis.presale.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/genesis/genesis.swap.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/genesis/genesis.withdraw.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/genesis/genesishelpers.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/tm/tm.transfer.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/tm/tm.update.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/tm/tmhelpers.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/toolbox/sol.balance.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/toolbox/sol.unwrap.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/toolbox/sol.wrap.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/toolbox/token.create.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/toolbox/token.mint.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/commands/toolbox/toolbox.transaction.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/lib/deserializeInstruction.test.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/runCli.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/tsconfig.json",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/test/utils.ts",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/tsconfig.build.json",
+          "codeql-db/src/home/aoi/dev/metaplex-cli/tsconfig.json",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/es/es2016.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/es/es2017.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/es/es3.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/es/es5.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/es/es6.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/es/es6_collections.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/es/intl.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/es/proxy.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/lib/bdd.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/lib/jquery-3.2.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/lib/should.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/lib/vows.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/assert.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/assert_legacy.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/buffer.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/child_process.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/cluster.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/console.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/constants.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/crypto.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/dgram.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/dns.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/domain.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/events.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/fs.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/globals.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/http.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/https.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/module.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/net.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/os.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/path.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/process.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/punycode.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/querystring.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/readline.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/repl.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/stream.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/string_decoder.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/sys.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/timers.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/tls.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/tty.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/url.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/util.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/v8.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/vm.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/nodejs/zlib.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/vm/jsshell.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/vm/rhino.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/vm/spidermonkey.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/vm/v8.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/chrome.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/fetchapi.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/fileapi.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/flash.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/gecko_css.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/gecko_dom.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/gecko_event.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/gecko_ext.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/gecko_xml.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/html5.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/ie_css.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/ie_dom.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/ie_event.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/ie_vml.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/intl.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/iphone.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/mediasource.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/page_visibility.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/streamsapi.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/url.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/w3c_anim_timing.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/w3c_batterystatus.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/w3c_css.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/w3c_css3d.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/w3c_device_sensor_event.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/w3c_dom1.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/w3c_dom2.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/w3c_dom3.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/w3c_dom4.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/w3c_elementtraversal.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/w3c_encoding.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/w3c_event.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/w3c_event3.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/w3c_gamepad.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/w3c_geolocation.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/w3c_indexeddb.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/w3c_midi.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/w3c_navigation_timing.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/w3c_permissions.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/w3c_pointer_events.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/w3c_range.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/w3c_requestidlecallback.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/w3c_rtc.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/w3c_screen_orientation.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/w3c_selectors.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/w3c_serviceworker.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/w3c_touch_event.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/w3c_webcrypto.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/w3c_xml.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/webgl.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/webkit_css.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/webkit_dom.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/webkit_event.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/webkit_notifications.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/webkit_usercontent.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/webstorage.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/whatwg_encoding.js",
+          "codeql-db/src/nix/store/rpgkh3m25bjs70l3d9w5x5psrbx216ih-codeql-2.25.2/codeql/javascript/tools/data/externs/web/window.js"
+        ]
+      },
+      {
+        "name": "Other — docs-bubblegum",
+        "slug": "other-docs-bubblegum",
+        "files": [
+          "docs/bubblegum/README.md",
+          "docs/bubblegum/nft-burn.md",
+          "docs/bubblegum/nft-create.md",
+          "docs/bubblegum/nft-fetch.md",
+          "docs/bubblegum/nft-transfer.md",
+          "docs/bubblegum/nft-update.md",
+          "docs/bubblegum/quick-reference.md",
+          "docs/bubblegum/tree-create.md",
+          "docs/bubblegum/tree-list.md",
+          "docs/bubblegum/troubleshooting.md"
+        ]
+      },
+      {
+        "name": "Other — docs-candyMachine",
+        "slug": "other-docs-candymachine",
+        "files": [
+          "docs/candyMachine/groups.md",
+          "docs/candyMachine/guards.md",
+          "docs/candyMachine/index.md"
+        ]
+      },
+      {
+        "name": "Other — docs",
+        "slug": "other-docs",
+        "files": [
+          "docs/config.md",
+          "docs/core.md",
+          "docs/toolbox.md"
+        ]
+      },
+      {
+        "name": "Other — docs-tokenMetadata",
+        "slug": "other-docs-tokenmetadata",
+        "files": [
+          "docs/tokenMetadata/create.md",
+          "docs/tokenMetadata/index.md"
+        ]
+      },
+      {
+        "name": "Other — eslint.config.js",
+        "slug": "other-eslint-config-js",
+        "files": [
+          "eslint.config.js"
+        ]
+      },
+      {
+        "name": "Other — flake.nix",
+        "slug": "other-flake-nix",
+        "files": [
+          "flake.nix"
+        ]
+      },
+      {
+        "name": "Other — justfile",
+        "slug": "other-justfile",
+        "files": [
+          "justfile"
+        ]
+      },
+      {
+        "name": "Other — oclif.json",
+        "slug": "other-oclif-json",
+        "files": [
+          "oclif.json"
+        ]
+      },
+      {
+        "name": "Other — oclif.manifest.json.js",
+        "slug": "other-oclif-manifest-json-js",
+        "files": [
+          "oclif.manifest.json.js"
+        ]
+      },
+      {
+        "name": "Other — package.json",
+        "slug": "other-package-json",
+        "files": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "Other — results.sarif",
+        "slug": "other-results-sarif",
+        "files": [
+          "results.sarif"
+        ]
+      },
+      {
+        "name": "Other — scripts",
+        "slug": "other-scripts",
+        "files": [
+          "scripts/createTestCandyMachineDirectory.js"
+        ]
+      },
+      {
+        "name": "Other — src",
+        "slug": "other-src",
+        "files": [
+          "src/constants.ts",
+          "src/index.ts"
+        ]
+      },
+      {
+        "name": "Other — src-lib",
+        "slug": "other-src-lib",
+        "files": [
+          "src/lib/StandardColors.ts",
+          "src/lib/cm/candyGuardsSchema.ts",
+          "src/lib/cm/createCmTemplateFolder.ts",
+          "src/lib/cm/insertItems.ts",
+          "src/lib/cm/jsonGuardParser.ts",
+          "src/lib/cm/prompts/createCandyMachineWizardPrompt.ts",
+          "src/lib/cm/validateAssetsFolder.ts",
+          "src/lib/cm/validateCacheUploads.ts",
+          "src/lib/core/burn/batchBurn.ts",
+          "src/lib/core/burn/burnAssetTx.ts",
+          "src/lib/core/create/createAssetFromFiles.ts",
+          "src/lib/core/create/createAssetsFromDirectory.ts",
+          "src/lib/core/create/createTx.ts",
+          "src/lib/core/create/prepareJsonMetadata.ts",
+          "src/lib/core/fetch/batchFetch.ts",
+          "src/lib/core/fetch/fetch.ts",
+          "src/lib/core/templates/offchainAssetTemplate.ts",
+          "src/lib/core/templates/offchainCollectionTemplate.ts",
+          "src/lib/core/update/batchUpdate.ts",
+          "src/lib/core/update/update.ts",
+          "src/lib/genesis.ts",
+          "src/lib/metadata/fetchJsonMetadata.ts",
+          "src/lib/metadata/getMetadata.ts",
+          "src/lib/metadata/readJsonMetadataFromFile.ts",
+          "src/lib/toolbox/airdrop.ts",
+          "src/lib/umi/confirmAllTransactions.ts",
+          "src/lib/umi/logFailedTransactions.ts",
+          "src/lib/uploader/fetchAdvancedStorageProvider.ts",
+          "src/lib/uploader/imageUploader.ts",
+          "src/lib/uploader/initStorageProvider.ts",
+          "src/lib/uploader/resolveImageUri.ts",
+          "src/lib/uploader/uploadJson.ts",
+          "src/lib/uploader/uploadProviders/cascade.ts",
+          "src/lib/uploader/uploadProviders/irys.ts",
+          "src/lib/uploader/uploadProviders/turbo.ts"
+        ]
+      },
+      {
+        "name": "Other — test-assets-cm",
+        "slug": "other-test-assets-cm",
+        "files": [
+          "test-assets/cm/0.json",
+          "test-assets/cm/1.json",
+          "test-assets/cm/2.json",
+          "test-assets/cm/3.json",
+          "test-assets/cm/4.json",
+          "test-assets/cm/5.json"
+        ]
+      },
+      {
+        "name": "Other — test-assets-core",
+        "slug": "other-test-assets-core",
+        "files": [
+          "test-assets/core/0.json",
+          "test-assets/core/1-plugins.json",
+          "test-assets/core/1.json",
+          "test-assets/core/10.json",
+          "test-assets/core/11.json",
+          "test-assets/core/12.json",
+          "test-assets/core/13.json",
+          "test-assets/core/14.json",
+          "test-assets/core/15.json",
+          "test-assets/core/2.json",
+          "test-assets/core/3.json",
+          "test-assets/core/4.json",
+          "test-assets/core/5.json",
+          "test-assets/core/6.json",
+          "test-assets/core/7.json",
+          "test-assets/core/8.json",
+          "test-assets/core/9.json",
+          "test-assets/core/plugins.json",
+          "test-assets/core/test.json"
+        ]
+      },
+      {
+        "name": "Other — test-files",
+        "slug": "other-test-files",
+        "files": [
+          "test-files/3d.glb",
+          "test-files/key.json",
+          "test-files/plugins-updated.json",
+          "test-files/plugins.json"
+        ]
+      },
+      {
+        "name": "Other — test-commands",
+        "slug": "other-test-commands",
+        "files": [
+          "test/commands/agents/agenthelpers.ts",
+          "test/commands/agents/agents.executive.test.ts",
+          "test/commands/agents/agents.fetch.test.ts",
+          "test/commands/agents/agents.register.test.ts",
+          "test/commands/agents/agents.revoke.test.ts",
+          "test/commands/agents/agents.set-agent-token.test.ts",
+          "test/commands/bg/README.md",
+          "test/commands/bg/bg.collection.create.test.ts",
+          "test/commands/bg/bg.integration.test.ts",
+          "test/commands/bg/bg.nft.burn.test.ts",
+          "test/commands/bg/bg.nft.create.test.ts",
+          "test/commands/bg/bg.nft.transfer.test.ts",
+          "test/commands/bg/bg.nft.update.test.ts",
+          "test/commands/bg/bg.tree.create.test.ts",
+          "test/commands/bg/bgcollectionhelpers.ts",
+          "test/commands/bg/bghelpers.ts",
+          "test/commands/bg/common.ts",
+          "test/commands/cm/cm.create.test.ts",
+          "test/commands/cm/cm.full.test.ts",
+          "test/commands/cm/cm.guard.test.ts",
+          "test/commands/cm/cm.insert.test.ts",
+          "test/commands/cm/cm.withdraw.test.ts",
+          "test/commands/cm/guard-parsing.test.ts",
+          "test/commands/core/core.asset-signer.test.ts",
+          "test/commands/core/core.asset.update.collection.test.ts",
+          "test/commands/core/core.burn.test.ts",
+          "test/commands/core/core.collection.create.test.ts",
+          "test/commands/core/core.create.test.ts",
+          "test/commands/core/core.execute.test.ts",
+          "test/commands/core/core.plugins.test.ts",
+          "test/commands/core/core.prepareJsonMetadata.test.ts",
+          "test/commands/core/core.transfer.test.ts",
+          "test/commands/core/corehelpers.ts",
+          "test/commands/distro/distro.create.test.ts",
+          "test/commands/distro/distro.deposit.test.ts",
+          "test/commands/distro/distro.withdraw.test.ts",
+          "test/commands/genesis/genesis-manual-test.sh",
+          "test/commands/genesis/genesis.create.test.ts",
+          "test/commands/genesis/genesis.integration.test.ts",
+          "test/commands/genesis/genesis.launch.test.ts",
+          "test/commands/genesis/genesis.presale.test.ts",
+          "test/commands/genesis/genesis.swap.test.ts",
+          "test/commands/genesis/genesis.withdraw.test.ts",
+          "test/commands/genesis/genesishelpers.ts",
+          "test/commands/tm/tm.transfer.test.ts",
+          "test/commands/tm/tm.update.test.ts",
+          "test/commands/tm/tmhelpers.ts",
+          "test/commands/toolbox/sol.balance.test.ts",
+          "test/commands/toolbox/sol.unwrap.test.ts",
+          "test/commands/toolbox/sol.wrap.test.ts",
+          "test/commands/toolbox/token.create.test.ts",
+          "test/commands/toolbox/token.mint.test.ts",
+          "test/commands/toolbox/toolbox.transaction.test.ts"
+        ]
+      },
+      {
+        "name": "Other — test-lib",
+        "slug": "other-test-lib",
+        "files": [
+          "test/lib/deserializeInstruction.test.ts"
+        ]
+      },
+      {
+        "name": "Other — test",
+        "slug": "other-test",
+        "files": [
+          "test/runCli.ts",
+          "test/tsconfig.json",
+          "test/utils.ts"
+        ]
+      },
+      {
+        "name": "Other — tools-codeql",
+        "slug": "other-tools-codeql",
+        "files": [
+          "tools/codeql/codeql"
+        ]
+      },
+      {
+        "name": "Other — tsconfig.build.json",
+        "slug": "other-tsconfig-build-json",
+        "files": [
+          "tsconfig.build.json"
+        ]
+      },
+      {
+        "name": "Other — tsconfig.json",
+        "slug": "other-tsconfig-json",
+        "files": [
+          "tsconfig.json"
+        ]
+      }
+    ]
+  }
+]
