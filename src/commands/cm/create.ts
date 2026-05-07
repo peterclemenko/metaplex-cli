@@ -93,7 +93,7 @@ export default class CmCreate extends TransactionCommand<typeof CmCreate> {
         const { umi, explorer } = this.context
 
         if (flags.wizard) {
-            return await this.runWizard(umi);
+            return await this.runWizard(umi, args.directory);
         } else if (flags.template) {
             const templatePath = path.join(process.cwd(), 'cm-template')
             createCmTemplateFolder(undefined, true)
@@ -104,7 +104,7 @@ export default class CmCreate extends TransactionCommand<typeof CmCreate> {
         }
     }
 
-    private async runWizard(umi: Umi) {
+    private async runWizard(umi: Umi, directoryArg?: string) {
         this.log(
             `--------------------------------
     
@@ -115,8 +115,8 @@ export default class CmCreate extends TransactionCommand<typeof CmCreate> {
 --------------------------------`
         )
 
-        // Check for assets folder in current directory
-        const currentDir = process.cwd()
+        // Determine the directory to operate in (either provided or current)
+        const currentDir = directoryArg ? path.resolve(directoryArg) : process.cwd()
         const assetsPath = path.join(currentDir, 'assets')
         const hasAssetsFolder = fs.existsSync(assetsPath)
 
@@ -124,12 +124,26 @@ export default class CmCreate extends TransactionCommand<typeof CmCreate> {
         let useCurrentDirectory = false
 
         if (hasAssetsFolder) {
-            this.log('✅ Found assets folder in current directory.')
+            this.log(`✅ Found assets folder in ${currentDir}.`)
             candyMachineDir = currentDir
             useCurrentDirectory = true
         } else {
             this.log('⚠️  No assets folder found in current directory.')
-            
+            // If a directoryArg was provided, create it and its assets folder automatically
+            if (directoryArg) {
+                candyMachineDir = currentDir
+                if (!fs.existsSync(candyMachineDir)) {
+                    fs.mkdirSync(candyMachineDir, { recursive: true })
+                    this.log(`\n📁 Created project directory: ${candyMachineDir}`)
+                }
+                fs.mkdirSync(path.join(candyMachineDir, 'assets'), { recursive: true })
+
+                this.log('\n📁 Created assets folder in specified directory. Continuing wizard...')
+                // Treat the specified directory as the active directory for the wizard
+                useCurrentDirectory = true
+                // continue on into the wizard (do not return)
+            }
+
             const choice = await select({
                 message: 'How would you like to proceed?',
                 choices: [
@@ -157,7 +171,7 @@ export default class CmCreate extends TransactionCommand<typeof CmCreate> {
                 }
             })
 
-            candyMachineDir = path.join(currentDir, projectName)
+            candyMachineDir = path.join(process.cwd(), projectName)
             if (fs.existsSync(candyMachineDir)) {
                 throw new Error(`Directory ${projectName} already exists. Please choose a different name.`)
             }
@@ -175,7 +189,7 @@ export default class CmCreate extends TransactionCommand<typeof CmCreate> {
             throw new Error(`Candy machine configuration already exists at ${candyMachineConfigPath}. Please remove it or use a different directory.`)
         }
 
-        const { candyMachineConfig, assets } = await createCandyMachinePrompt(useCurrentDirectory)
+        const { candyMachineConfig, assets } = await createCandyMachinePrompt(useCurrentDirectory, candyMachineDir)
 
         // Type guard for assets
         if ('error' in assets) {
@@ -195,9 +209,9 @@ export default class CmCreate extends TransactionCommand<typeof CmCreate> {
             assetItems: {}
         }
 
-        if (!assets.imageFiles) throw new Error('No image files found')
+        const numItems = assets.jsonFiles?.length ?? 0
 
-        for (let index = 0; index < assets.imageFiles?.length; index++) {
+        for (let index = 0; index < numItems; index++) {
             const jsonFile = assets.jsonFiles?.[index]
             if (!jsonFile) throw new Error(`No json path found at index ${index}`)
 
@@ -206,7 +220,7 @@ export default class CmCreate extends TransactionCommand<typeof CmCreate> {
 
             const assetCacheItem: CandyMachineAssetCacheItem = {
                 name,
-                image: assets.imageFiles[index],
+                image: assets.imageFiles?.[index],
                 animation: assets.animationFiles?.[index],
                 json: jsonFile,
                 loaded: false,

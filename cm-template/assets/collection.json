@@ -1,0 +1,15 @@
+{
+  "name": "Collection",
+  "description": "This is a Collection NFT Asset",
+  "image": "collection.png",
+  "external_url": "https://example.com",
+  "properties": {
+    "category": "image",
+    "files": [
+      {
+        "uri": "collection.png",
+        "type": "image/png"
+      }
+    ]
+  }
+}

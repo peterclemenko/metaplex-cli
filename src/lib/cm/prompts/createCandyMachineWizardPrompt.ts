@@ -1,4 +1,4 @@
-import { checkbox, confirm, input } from '@inquirer/prompts'
+import { checkbox, confirm, input, select } from '@inquirer/prompts'
 import { DefaultGuardSet } from '@metaplex-foundation/mpl-core-candy-machine'
 import { isPublicKey } from '@metaplex-foundation/umi'
 import path from 'node:path'
@@ -9,7 +9,7 @@ import validateAssetsFolder, { ValidateAssetsResult } from '../validateAssetsFol
 import { CandyMachineConfig, RawGuardConfig } from '../types.js'
 import fs from 'node:fs'
 
-const createCandyMachinePrompt = async (useCurrentDirectory: boolean = false): Promise<{ candyMachineConfig: CandyMachineConfig, assets: ValidateAssetsResult }> => {
+const createCandyMachinePrompt = async (useCurrentDirectory: boolean = false, baseDir?: string): Promise<{ candyMachineConfig: CandyMachineConfig, assets: ValidateAssetsResult }> => {
     const candyMachineConfig: CandyMachineConfig = {
         name: '',
         directory: undefined,
@@ -38,8 +38,8 @@ const createCandyMachinePrompt = async (useCurrentDirectory: boolean = false): P
     let targetDir: string
     
     if (useCurrentDirectory) {
-        // Use current directory when assets folder is already present
-        targetDir = process.cwd()
+        // Use provided baseDir or current directory when assets folder is already present
+        targetDir = baseDir || process.cwd()
         candyMachineConfig.name = path.basename(targetDir)
     } else {
         // Prompt for directory-friendly name
@@ -83,6 +83,17 @@ const createCandyMachinePrompt = async (useCurrentDirectory: boolean = false): P
 
     let assets: ValidateAssetsResult
 
+    // Ask whether this project uses local images or JSON-only with hosted images
+    const modeChoice = await select({
+        message: 'Are your images local in the assets folder or are they already hosted (JSON contains image links)?',
+        choices: [
+            { name: 'Images + JSON (local images in assets folder)', value: 'local' },
+            { name: 'JSON only (images already hosted, JSON includes links)', value: 'json-only' }
+        ]
+    })
+
+    const jsonOnly = modeChoice === 'json-only'
+
     while (true) {
         const confirmation = await input({
             message: useCurrentDirectory ? 'Press enter to continue with asset validation, or type q to abort' : 'Move your assets to the assets folder and press enter to continue, or type q to abort',
@@ -93,7 +104,7 @@ const createCandyMachinePrompt = async (useCurrentDirectory: boolean = false): P
             console.log('Aborting wizard by user request.')
             process.exit(0)
         }
-        assets = await validateAssetsFolder(path.join(targetDir, 'assets'))
+        assets = await validateAssetsFolder(path.join(targetDir, 'assets'), { allowJsonOnly: jsonOnly })
         if ('error' in assets) {
             console.log(`❌ ${assets.error}`)
             // Actionable suggestions

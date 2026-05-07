@@ -1,0 +1,31 @@
+{
+  "name": "my-candy-machine",
+  "directory": "/home/aoi/dev/metaplex-cli/cm-template",
+  "config": {
+    "collection": "",
+    "itemsAvailable": 1,
+    "isMutable": true,
+    "isSequential": false,
+    "guardConfig": {},
+    "groups": [
+      {
+        "label": "group1",
+        "guards": {
+          "solPayment": {
+            "lamports": 1000000,
+            "destination": "11111111111111111111111111111111"
+          }
+        }
+      },
+      {
+        "label": "group2",
+        "guards": {
+          "solPayment": {
+            "lamports": 4000000,
+            "destination": "11111111111111111111111111111111"
+          }
+        }
+      }
+    ]
+  }
+}

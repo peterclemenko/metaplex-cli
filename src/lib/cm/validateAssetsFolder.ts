@@ -12,7 +12,7 @@ export type ValidateAssetsResult =
       collectionFiles: { json: string | undefined; image: string | undefined }
     }
 
-const validateAssetsFolder = (assetsFolder: string): ValidateAssetsResult => {
+const validateAssetsFolder = (assetsFolder: string, options?: { allowJsonOnly?: boolean }): ValidateAssetsResult => {
     const files = fs.readdirSync(assetsFolder)
 
     // we should have 3-4 different sets of files
@@ -60,14 +60,16 @@ const validateAssetsFolder = (assetsFolder: string): ValidateAssetsResult => {
         return { error: 'No json files found in the assets folder' }
     }
 
-    // validate that we have at least one image file
-    if (imageFiles.length === 0) {
-        return { error: 'No image files found in the assets folder' }
-    }
+    // validate that we have at least one image file unless JSON-only mode is enabled
+    if (!options?.allowJsonOnly) {
+        if (imageFiles.length === 0) {
+            return { error: 'No image files found in the assets folder' }
+        }
 
-    //validate the image files and json files are the same length
-    if (imageFiles.length !== jsonFiles.length) {
-        return { error: 'The number of image files and json files are not the same' }
+        //validate the image files and json files are the same length
+        if (imageFiles.length !== jsonFiles.length) {
+            return { error: 'The number of image files and json files are not the same' }
+        }
     }
 
     // validate that files are named incrementing from 0 to the length of the files
@@ -90,23 +92,31 @@ const validateAssetsFolder = (assetsFolder: string): ValidateAssetsResult => {
         return aNum - bNum
     })
 
-    for (let i = 0; i < sortedImageFiles.length; i++) {
+    // If JSON-only mode is enabled, skip strict filename matching for images
+    const validateLength = options?.allowJsonOnly ? sortedJsonFiles.length : sortedImageFiles.length
+    for (let i = 0; i < validateLength; i++) {
         const expectedJson = `${i}.json`
-        const actualImage = sortedImageFiles[i]
         const actualJson = sortedJsonFiles[i]
 
-        // Check if the image file has the correct numeric name with any supported extension
-        const imageBaseName = actualImage.split('.')[0]
-        const imageExtension = actualImage.split('.').pop()?.toLowerCase()
-        const supportedExtensions = ['png', 'jpg', 'jpeg', 'gif']
-        
-        const isValidImageName = imageBaseName === i.toString() && supportedExtensions.includes(imageExtension || '')
-
-        if (!isValidImageName || actualJson !== expectedJson) {
+        if (actualJson !== expectedJson) {
             console.log(`Debug - Mismatch at index ${i}:`)
-            console.log(`  Expected image: ${i}.<png|jpg|jpeg|gif>, got: ${actualImage}`)
             console.log(`  Expected json: ${expectedJson}, got: ${actualJson}`)
             return { error: 'The image or json files are not named incrementing from 0 to the length of the files' }
+        }
+
+        if (!options?.allowJsonOnly) {
+            const actualImage = sortedImageFiles[i]
+            // Check if the image file has the correct numeric name with any supported extension
+            const imageBaseName = actualImage.split('.')[0]
+            const imageExtension = actualImage.split('.').pop()?.toLowerCase()
+            const supportedExtensions = ['png', 'jpg', 'jpeg', 'gif']
+            const isValidImageName = imageBaseName === i.toString() && supportedExtensions.includes(imageExtension || '')
+
+            if (!isValidImageName) {
+                console.log(`Debug - Mismatch at index ${i}:`)
+                console.log(`  Expected image: ${i}.<png|jpg|jpeg|gif>, got: ${actualImage}`)
+                return { error: 'The image or json files are not named incrementing from 0 to the length of the files' }
+            }
         }
     }
 
