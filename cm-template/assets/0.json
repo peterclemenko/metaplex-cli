@@ -1,20 +1,14 @@
 {
-  "name": "my-candy-machine #0",
+  "name": "slava ukraini #0",
   "description": "This is the first item in the candy machine",
-  "image": "0.png",
-  "external_url": "https://arweave.net/RAHo3U-jx1_Z-RyL7WCmKE_FmcfJ0j4lmAmln7O7Gk4",
-  "attributes": [
-    {
-      "trait_type": "Color",
-      "value": "Red"
-    }
-  ],
+  "image": "https://arweave.net/RAHo3U-jx1_Z-RyL7WCmKE_FmcfJ0j4lmAmln7O7Gk4",
+  "external_url": "kozak.brave",
   "properties": {
     "category": "image",
     "files": [
       {
-        "uri": "0.png",
-        "type": "image/png"
+        "uri": "https://arweave.net/RAHo3U-jx1_Z-RyL7WCmKE_FmcfJ0j4lmAmln7O7Gk4",
+        "type": "image/jpeg"
       }
     ]
   }

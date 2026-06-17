@@ -1,0 +1,16 @@
+{
+  "name": "cm-template",
+  "config": {
+    "collection": "",
+    "itemsAvailable": 3,
+    "isSequential": false,
+    "isMutable": false,
+    "guardConfig": {
+      "solPayment": {
+        "lamports": 10000000,
+        "destination": "9wuARsYFDM8XW2W9xCZnumkUhsSTLTJhAsaBcg9pEoVS"
+      }
+    },
+    "groups": []
+  }
+}

@@ -1,14 +1,14 @@
 {
   "name": "Collection",
   "description": "This is a Collection NFT Asset",
-  "image": "collection.png",
-  "external_url": "https://example.com",
+  "image": "https://arweave.net/CdIV4ehoAqZhcs3pOtUH1mfjXl0_KxZzzksXFc73DMU",
+  "external_url": "kozak.brave",
   "properties": {
     "category": "image",
     "files": [
       {
-        "uri": "collection.png",
-        "type": "image/png"
+        "uri": "https://arweave.net/CdIV4ehoAqZhcs3pOtUH1mfjXl0_KxZzzksXFc73DMU",
+        "type": "image/jpeg"
       }
     ]
   }

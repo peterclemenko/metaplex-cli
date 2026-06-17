@@ -1,0 +1,22 @@
+{
+  "assetItems": {
+    "0": {
+      "name": "slava ukraini #0",
+      "json": "0.json",
+      "loaded": false,
+      "jsonUri": "https://gateway.irys.xyz/Gdvm71Sy5GvGeSK7k4Qqxhh6eTf2xPSSTcCzaqGYjskX"
+    },
+    "1": {
+      "name": "slava ukraini #0",
+      "json": "1.json",
+      "loaded": false,
+      "jsonUri": "https://gateway.irys.xyz/EdHdr1Ev9hiLzgJbBgZJEvgQQH7aPL9GufcmGCKyc9Us"
+    },
+    "2": {
+      "name": "slava ukraini #0",
+      "json": "2.json",
+      "loaded": false,
+      "jsonUri": "https://gateway.irys.xyz/2qnwZiiY92q9gYCGCo8QePSZWWvobSbTbYmhbV7v5WJx"
+    }
+  }
+}

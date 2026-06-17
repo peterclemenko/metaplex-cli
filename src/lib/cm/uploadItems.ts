@@ -21,15 +21,20 @@ const uploadCandyMachineItems = async (
 ): Promise<{ assetCache: CandyMachineAssetCache }> => {
     const assetsDirectory = path.join(candyMachineDir, 'assets')
 
+    const isRemoteUri = (value?: string) => {
+        if (!value) return false
+        return /^(https?:|ipfs:|ar:|data:)/i.test(value)
+    }
+
     // Check which items need image uploads
     const itemsNeedingImageUpload: { index: number, item: CandyMachineAssetCacheItem }[] = Object.entries(assetCache.assetItems)
         .map(([index, item]) => ({ index: Number(index), item }))
-        .filter(({ item }) => !item.imageUri)
+        .filter(({ item }) => !item.imageUri && item.image && !isRemoteUri(item.image))
 
     // Check which items need JSON uploads
     const itemsNeedingJsonUpload: { index: number, item: CandyMachineAssetCacheItem }[] = Object.entries(assetCache.assetItems)
         .map(([index, item]) => ({ index: Number(index), item }))
-        .filter(({ item }) => !item.jsonUri)
+        .filter(({ item }) => !item.jsonUri && item.json)
 
     if (itemsNeedingImageUpload.length === 0 && itemsNeedingJsonUpload.length === 0) {
         return { assetCache }

@@ -1,0 +1,15 @@
+{
+  "name": "slava ukraini #0",
+  "description": "This is the first item in the candy machine",
+  "image": "https://arweave.net/lcdtKW4j0H9YAJFTKHiNqQRwJFKKE8wbhwg0yTyop4o",
+  "external_url": "kozak.brave",
+  "properties": {
+    "category": "image",
+    "files": [
+      {
+        "uri": "https://arweave.net/lcdtKW4j0H9YAJFTKHiNqQRwJFKKE8wbhwg0yTyop4o",
+        "type": "image/jpeg"
+      }
+    ]
+  }
+}

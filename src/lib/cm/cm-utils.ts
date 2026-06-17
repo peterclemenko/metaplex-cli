@@ -70,9 +70,17 @@ export const createInitialAssetCache = async (directory?: string): Promise<Candy
         throw new Error(`Assets directory not found at ${assetsDir}`);
     }
     
-    const validation = await validateAssetsFolder(assetsDir);
+    let validation = await validateAssetsFolder(assetsDir);
     if ('error' in validation) {
-        throw new Error(validation.error);
+        // If there are no local images but JSON files exist, allow JSON-only mode
+        if (validation.error.includes('No image files')) {
+            validation = await validateAssetsFolder(assetsDir, { allowJsonOnly: true });
+            if ('error' in validation) {
+                throw new Error(validation.error);
+            }
+        } else {
+            throw new Error(validation.error);
+        }
     }
     
     const assetCache: CandyMachineAssetCache = {
@@ -83,19 +91,42 @@ export const createInitialAssetCache = async (directory?: string): Promise<Candy
         const jsonFile = validation.jsonFiles[index];
         const imageFile = validation.imageFiles[index];
         const animationFile = validation.animationFiles?.[index];
-        
-        // Read the JSON file to get the name
+
+        // Read the JSON file to get the name and possibly a remote image URI
         const jsonPath = path.join(assetsDir, jsonFile);
         const jsonContent = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
         const name = jsonContent.name;
-        
+
+        // If there's no local image file but the JSON references a remote image (arweave/ipfs/http),
+        // store that URI in the asset cache `image` field so upload logic can detect and skip it.
+        const isRemoteUri = (value?: string) => {
+            if (!value) return false
+            return /^(https?:|ipfs:|ar:|data:)/i.test(value)
+        }
+
+        const imageValue = imageFile ? imageFile : (isRemoteUri(jsonContent.image) ? jsonContent.image : undefined)
+
         const assetCacheItem: CandyMachineAssetCacheItem = {
             name,
-            image: imageFile,
+            image: imageValue,
             animation: animationFile,
             json: jsonFile,
             loaded: false,
         };
+
+        // If the image is already a remote URI, populate imageUri and imageType so
+        // storage validation won't require uploading or re-uploading the image.
+        if (!imageFile && isRemoteUri(jsonContent.image)) {
+            assetCacheItem.imageUri = jsonContent.image
+            try {
+                const fileEntry = jsonContent.properties?.files?.[0]
+                if (fileEntry && fileEntry.type) {
+                    assetCacheItem.imageType = fileEntry.type
+                }
+            } catch (e) {
+                // ignore
+            }
+        }
         
         assetCache.assetItems[index] = assetCacheItem;
     }
